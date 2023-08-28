@@ -18,131 +18,85 @@
 </head>
 
 <body>
-  <header>
-    <nav class="border-b-2 md:container md:mx-auto flex flex-wrap items-center justify-between py-4 px-8 bg-white">
-      <input type="checkbox" name="" id="check">
-
-      <div class="logo-container">
-        <a href="/index.html" class="ml-0 xl:ml-12 focus:outline-none">
+  <header class="navbar-shadow">
+    <nav class="container mx-auto px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center">
+      <div class="flex items-center justify-between">
+        <a href="/index.html" class="focus:outline-none">
           <img src="images/icon/logo.png" alt="logo-perusahaan" class="w-20 h-20" />
         </a>
+        <button id="mobile-menu-toggle" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="menu-icon" fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+            <path id="close-icon" fill-rule="evenodd" class="hidden"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
       </div>
-
-      <div class="nav-btn p-4">
-        <div class="nav-links">
-          <ul class="md:ml-40">
-            <li class="nav-link" style="--i: 0.6s">
-              <a href="/index.html" class="navbar-a items-center md:p-3 p-1">Home</a>
-            </li>
-            <li class="nav-link" style="--i: 0.85s">
-              <a href="#" class="navbar-a items-center md:p-3 p-1">Product<i class="fas fa-caret-down"></i></a>
-              <div class="dropdown">
-                <ul class="">
-                  <li class="dropdown-link">
-                    <a href="" class="navbar-a items-center md:p-3 p-1">General Insurance<i
-                        class="fas fa-caret-down"></i></a>
-                    <div class="dropdown second">
-                      <ul>
-                        <li class="dropdown-link">
-                          <a class="items-center md:p-2 p-1 block" href="/surety-bond.html">Surety Bond</a>
-                        </li>
-                        <li class="dropdown-link">
-                          <a class="items-center md:p-2 p-1 block" href="/property.html">Property All Risk
-                          </a>
-                        </li>
-                        <li class="dropdown-link">
-                          <a href="#">Engineering<i class="fas fa-caret-down"></i></a>
-                          <div class="dropdown second">
-                            <ul>
-                              <li class="dropdown-link">
-                                <a class="items-center md:p-2 p-1 block" href="/contractor-risk.html">Contractor's All
-                                  Risk
-                                </a>
-                              </li>
-                              <li class="dropdown-link">
-                                <a class="items-center md:p-2 p-1 block" href="/electronic-equipment.html">Electronic
-                                  Equipment Insurance
-                                </a>
-                              </li>
-                              <li class="dropdown-link">
-                                <a class="items-center md:p-2 p-1 block" href="/heavy-equipment.html">Heavy Equipment
-                                  Insurance</a>
-                              </li>
-                              <li class="dropdown-link">
-                                <a class="items-center md:p-2 p-1 block" href="/marchinery-breakdown.html">Machinery
-                                  Breakdown Insurance</a>
-                              </li>
-                              <li class="dropdown-link">
-                                <a class="items-center md:p-2 p-1 block" href="/moveable-all.html">Moveable All Risk
-                                  Insurance</a>
-                              </li>
-                              <div class="arrow"></div>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="dropdown-link">
-                          <a href="#">Marine<i class="fas fa-caret-down"></i></a>
-                          <div class="dropdown second">
-                            <ul>
-                              <li class="dropdown-link">
-                                <a class="items-center md:p-2 p-1 block" href="/marine-cargo.html">Marine Cargo
-                                  Insurance
-                                </a>
-                              </li>
-                              <li class="dropdown-link">
-                                <a class="items-center md:p-2 p-1 block" href="/marine-hull.html">Marine Hull Insurance
-                                </a>
-                              </li>
-                              <li class="dropdown-link">
-                                <a class="items-center md:p-2 p-1 block" href="/marine-protection.html">Marine
-                                  Protection & Indemnity</a>
-                              </li>
-                              <li class="dropdown-link">
-                                <a class="items-center md:p-2 p-1 block" href="/wreck-removal.html">Wreck Removal
-                                  Insurance</a>
-                              </li>
-                              <div class="arrow"></div>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="dropdown-link">
-                          <a class="items-center md:p-2 p-1 block" href="/motor-vehicle.html">Motor Vehicle</a>
-                        </li>
-                        <li class="dropdown-link">
-                          <a class="items-center md:p-2 p-1 block" href="/liability.html">Liability Insurance
-                          </a>
-                        </li>
-                        <li class="dropdown-link">
-                          <a class="items-center md:p-2 p-1 block" href="/aviation.html">Aviation Insurance</a>
-                        </li>
-                        <div class="arrow"></div>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="/contractor.html" class="navbar-a items-center md:p-3 p-1">Contractor</a>
-                  </li>
-                  <div class="arrow"></div>
-                </ul>
+      <ul id="menu" class="hidden flex flex-col md:flex md:justify-end md:flex-row">
+        <a class="px-4 py-2 text-sm sm:text-md lg:text-lg rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline active-page"
+          href="#">Home</a>
+        <div id="dropdown" class="relative">
+          <button id="dropdown-toggle"
+            class="flex flex-row items-center w-full px-4 py-2 text-sm sm:text-md lg:text-lg text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline">
+            <span class="nav-span">Product</span>
+            <svg id="dropdown-icon" fill="currentColor" viewBox="0 0 20 20"
+              class="inline w-4 h-4 transition-transform duration-200 transform">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div id="dropdown-menu" class="absolute right-0 w-full origin-top-right rounded-md shadow-lg md:w-48 hidden">
+            <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+              <a id="general-insurance"
+                class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                href="#">General Insurance
+                <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+              <div id="general-insurance-submenu" class="hidden ml-3">
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                  href="/surety-bond.html">Surety Bond</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                  href="/property.html">Property All Risk</a>
               </div>
-            </li>
-            <li class="nav-link" style="--i: 1.35s">
-              <a href="/gallery.html" class="navbar-a items-center md:p-3 p-1">Gallery</a>
-            </li>
-            <li class="nav-link" style="--i: 1.35s">
-              <a href="/location.html" class="navbar-a items-center md:p-3 p-1">Location</a>
-            </li>
-            <li class="nav-link" style="--i: 1.35s">
-              <a href="contact.html" class="navbar-a items-center md:p-3 p-1">Contact</a>
-            </li>
-          </ul>
+              <a id="contractor"
+                class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                href="#">Contractor
+                <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+              <div id="contractor-submenu" class="hidden ml-3">
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                  href="contractor-risk.html">Contractor's All Risk</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                  href="electronic-equipment.html">Electronic Equipment Insurance</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                  href="heavy-equipment.html">Heavy Equipment Insurance</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                  href="marchinery-breakdown.html">Machinery Breakdown Insurance</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                  href="moveable-all.html">Moveable All Risk Insurance</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="hamburger-menu-container">
-        <div class="hamburger-menu">
-          <div></div>
-        </div>
+        <a class="px-4 py-2 text-sm sm:text-md lg:text-lg bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+          href="/gallery.html">Gallery</a>
+        <a class="px-4 py-2 text-sm sm:text-md lg:text-lg bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+          href="/location.html">Location</a>
+        <a class="px-4 py-2 text-sm sm:text-md lg:text-lg bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+          href="/contact.html">Contact</a>
+      </ul>
       </div>
     </nav>
   </header>

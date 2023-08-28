@@ -133,9 +133,11 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24">
         <div class="map-container">
           <div class="map-wrapper">
-            <iframe class="map-iframe"
-              src="https://maps.google.com/maps?q=Ruko%20Mega%20Cempaka%20Mas%20blok%20M%201%20no.%2033,%20Jakarta%20Pusat%20-%20Indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <div class="responsive-iframe-wrapper">
+              <iframe class="map-iframe"
+                src="https://maps.google.com/maps?q=Ruko%20Mega%20Cempaka%20Mas%20blok%20M%201%20no.%2033,%20Jakarta%20Pusat%20-%20Indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
         <div class="flex flex-col justify-center md:justify-start gap-10 ">
@@ -378,7 +380,6 @@
                 <div class="dropdown-footer">
                   <a class="flex flex-row items-center dropbtn-footer cursor-pointer text-white">
                     Product
-
                   </a>
                   <div class="dropdown-content-footer">
                     <a class="text-white transition group-hover:text-white/75" href="/general-insurance.html">General
