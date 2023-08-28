@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@700&family=Work+Sans:wght@400;600&display=swap");
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2 {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+}
+
+h3,
+p,
+nav>ul>a,
+.nav-span {
+  font-family: 'Work Sans';
+  font-style: normal;
+}
+
+nav>ul>a,
+.nav-span {
+  color: #1F2933;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+.navbar-shadow {
+  background: var(--netral-white, #FFF);
+  box-shadow: 0px 4px 8px 0px rgba(18, 120, 190, 0.10), 0px 4px 4px 0px rgba(18, 120, 190, 0.12);
+}
+
+.hero-heading {
+  font-family: "Sora";
+  font-weight: 700;
+  color: #000
+}
+
+.hero-text {
+  color: #747474;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.hero-button-link {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 6px;
+  background: var(--secondary-yellow, #F79A1F);
+}
+
+.active-page {
+  color: #1F2933;
+  font-weight: 600;
+}
+
+#menu a:hover,
+#dropdown-toggle:hover {
+  background-color: #F3F4F6;
+  /* Adjust the background color as needed */
+  color: #374151;
+  /* Adjust the text color as needed */
+}
+
+/* Add hover:bg and hover:text styles for submenu items */
+#general-insurance-submenu a:hover,
+#contractor-submenu a:hover {
+  background-color: #F3F4F6;
+  /* Adjust the background color as needed */
+  color: #374151;
+  /* Adjust the text color as needed */
+}
+
+.primary-color {
+  background-color: #1F2933;
+}
+
+.secondary-color {
+  background-color: #1F2933;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.center {
+  text-align: -webkit-center;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  place-content: start;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container-image-hero img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.bg-button-banner {
+  background: #f79a1f;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio for responsive scaling */
+}
+
+.map-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.visi-misi-header,
+.banner-header,
+.business-lines-header,
+.company-partner-header,
+.location-header,
+.business-lines-header,
+.business-header {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.visi-subheader,
+.misi-subheader {
+  color: #000;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.visi-description,
+.misi-description {
+  color: #747474;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+}
+
+.pdf-header {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+
+
+.footer-yellow-header {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+
+.footer-white-detail {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+}
+
+.contract-table-header {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+}
+
+.liability-card-header {
+  font-family: "Work Sans";
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+
+.location-text {
+
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #1F2933;
+}
+
+.bg-contract {
+  background: #ffdfb6;
+  box-shadow: inset 0px 4px 4px #ffca84;
+}
+
+.contract-table-detail {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.liability-card-detail {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  letter-spacing: -0.02em;
+}
+
+.liability-container-shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.visi-detail,
+.misi-detail,
+.hero-banner-text,
+.footer-menu,
+.contractor-text {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #717171;
+  letter-spacing: -0.02em;
+}
+
+.bg-container-business-lines {
+  background: linear-gradient(92.2deg,
+      #1278be -7.61%,
+      rgba(18, 120, 190, 0) 222.72%);
+}
+
+/* Slideshow container */
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+.text-yellow {
+  color: #f79a1f;
+}
+
+.icon-yellow {
+  color: #f79a1f;
+  font-size: 35px;
+}
+
+.footer-background {
+  background: #1278be;
+}
+
+.footer-card-background {
+  background: 00528B;
+}
+
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 40);
+  animation: scroll 90s linear infinite;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 20));
+  }
+}
+
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+img {
+  width: 100%;
+}
+
+img:hover {
+  transform: translateZ (20px);
+}
+
+.slider::before,
+.slider::after {
+  background-color: white;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 6%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: -1px;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 34px;
+}
+
+.my-float {
+  margin: 14px;
+}
+
+.contact-page-title {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: -0.02em;
+}
+
+.contact-page-subheader {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  letter-spacing: -0.02em;
+  font-feature-settings: "calt" off;
+
+  color: #000000;
+}
+
+.contact-page-input-border {
+  border: 1px solid #f79a1f;
+}
+
+.gallery-header {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 48px;
+
+  letter-spacing: -0.02em;
+}
+
+.max-w-custom-xs {
+  max-width: 10rem;
+}
+
+.background-pdf {
+  background: linear-gradient(88.64deg,
+      #1278be 2.31%,
+      rgba(18, 120, 190, 0) 182.68%);
+}
+
+.dropbtn-footer {
+  color: white;
+  border: none;
+}
+
+.dropdown-footer {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-footer {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-footer a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: gray;
+}
+
+.dropdown-footer:hover .dropdown-content-footer {
+  display: block;
+}
