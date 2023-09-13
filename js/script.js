@@ -85,3 +85,20 @@ generalInsuranceSubmenu.addEventListener("mouseleave", () => {
   generalInsuranceSubmenu.classList.add("hidden");
   isDropdownOpen = false;
 });
+
+javascriptBarcodeReader({
+  /* Image ID || HTML5 Image || HTML5 Canvas || HTML5 Canvas ImageData || Image URL */
+  image: source,
+  barcode: "code-128",
+  // barcodeType: 'industrial',
+  options: {
+    // useAdaptiveThreshold: true // for images with shaded/ gradient portions
+    // singlePass: true
+  },
+})
+  .then((code) => {
+    console.log(code);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
