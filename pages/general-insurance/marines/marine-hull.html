@@ -12,8 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" href="images/icon/logo.png" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="/images/icon/logo.png" />
+  <link rel="stylesheet" href="/css/style.css" />
   <title>Marine Cargo Insurance - PT.Mitra Sona Persada</title>
 </head>
 
@@ -22,7 +22,7 @@
     <nav class="container mx-auto px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
         <a href="/index.html" class="focus:outline-none">
-          <img src="images/icon/logo.png" alt="logo-perusahaan" class="w-20 h-20" />
+          <img src="/images/icon/logo.png" alt="logo-perusahaan" class="w-20 h-20" />
         </a>
         <button id="mobile-menu-toggle" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
           <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -62,37 +62,22 @@
               </a>
               <div id="general-insurance-submenu" class="hidden ml-3">
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/surety-bond.html">Surety Bond</a>
+                  href="/pages/general-insurance/engineering.html">Engineering</a>
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/property.html">Property All Risk</a>
+                  href="/pages/general-insurance/surety-bond.html">Surety Bond</a>
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/motor-vehicle.html">Motor Vehicle</a>
+                  href="/pages/general-insurance/property.html">Property All Risk</a>
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/liability.html">Liability</a>
+                  href="/pages/general-insurance/motor-vehicle.html">Motor Vehicle</a>
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/all-marine.html">All Marine</a>
+                  href="/pages/general-insurance/liability.html">Liability</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                  href="/pages/general-insurance/all-marine.html">All Marine</a>
               </div>
               <a id="contractor"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="#">Contractor
-                <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
-                  <path fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
+                href="/contractor.html">Contractor
               </a>
-              <div id="contractor-submenu" class="hidden ml-3">
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="contractor-risk.html">Contractor's All Risk</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="electronic-equipment.html">Electronic Equipment Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="heavy-equipment.html">Heavy Equipment Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="marchinery-breakdown.html">Machinery Breakdown Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="moveable-all.html">Moveable All Risk Insurance</a>
-              </div>
             </div>
           </div>
         </div>
@@ -108,16 +93,16 @@
   </header>
   <main>
     <section>
-      <div class="container mx-auto my-24 px-4 lg:px-6 xl:px-12">
-        <div class="flex flex-col gap-12">
-          <div class="p-2">
-            <img src="images/marine hull.jpg" class="w-full h-80 object-cover" />
+      <div class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
+        <div class="flex flex-col gap-6 md:gap-12">
+          <div class="w-full">
+            <img src="/images/marine hull.jpg" class="w-full h-80 object-cover" />
           </div>
-          <div class="flex flex-col gap-6">
-            <h3 class="location-header mb-6">
+          <div class="flex flex-col gap-4 md:gap-6">
+            <h2 class="location-header text-xl lg:text-2xl">
               Marine Hull Insurance
-            </h3>
-            <p class="text-lg">
+            </h2>
+            <p class="general-product-card-description text-sm md:text-base">
               Marine Hull Insurance which is an insurance coverage for the
               ship’s hull , along with its engines and equipments, against
               damage or loss that occurs as a result of shipping risks and
@@ -127,14 +112,10 @@
         </div>
       </div>
     </section>
-    <!-- 
-    <a href="https://wa.me/message/2CFRHSJQU3K3P1" class="float" target="_blank">
-      <i class="fa fa-whatsapp my-float"></i>
-    </a> -->
   </main>
   <footer class="footer-background">
-    <div class="container mx-auto pt-16 pb-6 px-6 center">
-      <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+    <div class="container px-4 md:px-8 lg:px-12 py-6 mx-auto center">
+      <div class="grid grid-cols-1 gap-10 lg:gap-14 md:grid-cols-3">
         <div class="">
           <nav class="">
             <ul class="space-y-4 text-sm">
@@ -156,24 +137,22 @@
             </ul>
           </nav>
         </div>
-        <div class=" ">
-          <p class="text-yellow footer-yellow-header">Contact Info</p>
-
-          <div class="flex flex-col gap-6 mt-8">
+        <div class="">
+          <p class="text-yellow footer-yellow-header">Contact Info </p>
+          <div class="flex flex-col gap-6 mt-8 ">
             <div class="items-center">
               <p class="text-white max-w-xs">
-                Ruko Mega Grosir Cempaka Mas Blok M1 no.33 Jakarta Pusat -
-                Indonesia
+                Ruko Mega Grosir Cempaka Mas Blok M1 no.33 Jakarta Pusat - Indonesia
               </p>
             </div>
             <div class="items-center">
               <p class="ml:0 md:ml-2 text-white transition group-hover:text-white/75">
-                +62 832-1321-3212
+                <a href="tel:9051290512">+6281298444393</a>
               </p>
             </div>
             <div class="items-center">
               <p class="ml:0 md:ml-2 text-white max-w-xs transition group-hover:text-white/75">
-                info@mitrasonapersada.com
+                Mspmitra@gmail.com
               </p>
             </div>
             <div class="items-center">
@@ -188,24 +167,21 @@
         </div>
         <div class="">
           <p class="text-yellow footer-yellow-header">Quicklinks</p>
-
           <nav class="mt-8">
             <ul class="space-y-5 footer-white-detail">
               <li>
                 <a class="text-white transition group-hover:text-white/75" href="/index.html">Home
                 </a>
               </li>
-
               <li class="dropdown-footer">
                 <a class="flex flex-row items-center dropbtn-footer cursor-pointer text-white">
                   Product
                 </a>
                 <div class="dropdown-content-footer">
-                  <a class="text-white transition group-hover:text-white/75" href="/business.html">General Insurance</a>
+                  <a class="text-white transition group-hover:text-white/75" href="/general-insurance.html">General
+                    Insurance</a>
                   <a class="text-white transition group-hover:text-white/75" href="/contractor.html">Contractor</a>
-                </div>
               </li>
-
               <li>
                 <a class="text-white transition group-hover:text-white/75" href="/gallery.html">Gallery</a>
               </li>
@@ -221,8 +197,7 @@
       </div>
     </div>
   </footer>
-
-  <script src="./js/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@
   <header class="navbar-shadow">
     <nav class="container mx-auto px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
-        <a href="../../index.html" class="focus:outline-none">
+        <a href="/index.html" class="focus:outline-none">
           <img src="/images/icon/logo.png" alt="logo-perusahaan" class="w-20 h-20" />
         </a>
         <button id="mobile-menu-toggle" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
@@ -36,8 +36,8 @@
         </button>
       </div>
       <ul id="menu" class="hidden flex flex-col md:flex md:justify-end md:flex-row">
-        <a class="px-4 py-2 text-sm md:text-base rounded-lg focus:outline-none focus:shadow-outline"
-          href="../../index.html" id="home">Home</a>
+        <a class="px-4 py-2 text-sm md:text-base rounded-lg focus:outline-none focus:shadow-outline" href="/index.html"
+          id="home">Home</a>
         <div id="dropdown" class="relative">
           <button id="dropdown-toggle"
             class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline">
@@ -62,6 +62,8 @@
               </a>
               <div id="general-insurance-submenu" class="hidden ml-3">
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                  href="/pages/general-insurance/engineering.html">Engineering</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="/pages/general-insurance/surety-bond.html">Surety Bond</a>
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="/pages/general-insurance/property.html">Property All Risk</a>
@@ -74,25 +76,8 @@
               </div>
               <a id="contractor"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="#">Contractor
-                <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
-                  <path fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
+                href="/contractor.html">Contractor
               </a>
-              <div id="contractor-submenu" class="hidden ml-3">
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/contractor-insurance/contractor-risk.html">Contractor's All Risk</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/contractor-insurance/electronic-equipment.html">Electronic Equipment Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/contractor-insurance/heavy-equipment.html">Heavy Equipment Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/contractor-insurance/marchinery-breakdown.html">Machinery Breakdown Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/contractor-insurance/moveable-all.html">Moveable All Risk Insurance</a>
-              </div>
             </div>
           </div>
         </div>
@@ -110,77 +95,73 @@
     <section>
       <div class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
         <div class="flex flex-start justify-center mb-12">
-          <h3 class="business-header text-center text-lg lg:text-3xl">All Marine</h3>
+          <h2 class="business-header text-center text-xl md:text-2xl lg:text-3xl">All Marine</h2>
         </div>
-        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10">
-          <div class="flex flex-col flex-start gap-6">
-            <div><img class="object-cover h-32 lg:h-56 rounded-md" src="/images/marine cargo insurance.jpg"
+        <div class="px-6 py-6 lg:px-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="flex flex-col flex-start gap-3 md:gap-6">
+            <div><img class="object-cover h-36 lg:h-56 rounded-md" src="/images/marine cargo insurance.jpg"
                 alt="Cargo Insurance" loading="lazy" />
             </div>
-            <div class="flex flex-col gap-3.5">
-              <h2 class="product-card-header leading-4 lg:leading-5 text-lg lg:text-2xl">Marine Cargo</h2>
-              <p class="leading-4 lg:leading-5">Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex
-                minim
-                veniam, quis.</p>
+            <div class="flex flex-col gap-2.5 lg:gap-3.5">
+              <h3 class="product-card-header text-xl lg:text-2xl">Marine Cargo</h3>
+              <p class="engineering-page-card-description text-sm md:text-base">Marine cargo insurance covers the risk
+                to goods transported through all means of transportation, land, air or sea..</p>
               <div class="">
                 <a href="/pages/general-insurance/marines/marine-cargo.html"
-                  class="product-card-button text-sm lg:text-md">
+                  class="product-card-button text-md md:text-lg">
                   Read More
                 </a>
               </div>
             </div>
           </div>
-          <div class="flex flex-col flex-start gap-6">
-            <div><img class="object-cover h-32 lg:h-56 rounded-md" src="/images/marine hull.jpg"
+          <div class="flex flex-col flex-start gap-3 md:gap-6">
+            <div><img class="object-cover h-36 lg:h-56 rounded-md" src="/images/marine hull.jpg"
                 alt="Marine Hull Insurance" loading="lazy" />
             </div>
-            <div class="flex flex-col gap-3.5">
-              <h2 class="product-card-header leading-4 lg:leading-5 text-lg lg:text-2xl">Marine Hull</h2>
-              <p class="leading-4 lg:leading-5">Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex
-                minim
-                veniam, quis.</p>
+            <div class="flex flex-col gap-2.5 lg:gap-3.5">
+              <h3 class="product-card-header text-xl lg:text-2xl">Marine Hull</h3>
+              <p class="engineering-page-card-description text-sm md:text-base">Marine Hull Insurance which is an
+                insurance coverage for the ship’s hull , along with its engines and equipments,
+                against damage or loss that occurs as a result of shipping risks and other marine hazards.</p>
               <div class="">
                 <a href="/pages/general-insurance/marines/marine-hull.html"
-                  class="product-card-button text-sm lg:text-md">
+                  class="product-card-button text-md md:text-lg">
                   Read More
                 </a>
               </div>
             </div>
           </div>
-          <div class="flex flex-col flex-start gap-6">
-            <div><img class="object-cover h-32 lg:h-56 rounded-md" src="/images/marine-protection.jpg"
+          <div class="flex flex-col flex-start gap-3 md:gap-6">
+            <div><img class="object-cover h-36 lg:h-56 rounded-md" src="/images/marine-protection.jpg"
                 alt="Marine Protection & Indemnity Insurance" loading="lazy" />
             </div>
-            <div class="flex flex-col gap-3.5">
-              <h2 class="product-card-header leading-4 lg:leading-5 text-lg lg:text-2xl">Marine Protection & Indemnity
-              </h2>
-              <p class="leading-4 lg:leading-5">Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex
-                minim
-                veniam, quis.</p>
+            <div class="flex flex-col gap-2.5 lg:gap-3.5">
+              <h3 class="product-card-header text-xl lg:text-2xl">Marine Protection & Indemnity
+              </h3>
+              <p class="engineering-page-card-description text-sm md:text-base">Insurance coverage to ship owners,
+                operators or charterers for legal liability to third parties.</p>
               <div class="">
                 <a href="/pages/general-insurance/marines/marine-protection.html"
-                  class="product-card-button text-sm lg:text-md">
+                  class="product-card-button text-md md:text-lg">
                   Read More
                 </a>
               </div>
             </div>
           </div>
-          <div class="flex flex-col flex-start gap-6">
-            <div><img class="object-cover h-32 lg:h-56 rounded-md" src="/images/wreck removal insurance.jpg"
+          <div class="flex flex-col flex-start gap-3 md:gap-6">
+            <div><img class="object-cover h-36 lg:h-56 rounded-md" src="/images/wreck removal insurance.jpg"
                 alt="Wreck Removal Insurance" loading="lazy" />
             </div>
-            <div class="flex flex-col gap-3.5">
-              <h2 class="product-card-header leading-4 lg:leading-5 text-lg lg:text-2xl">Wreck Removal
-              </h2>
-              <p class="leading-4">Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                minim
-                veniam, quis.</p>
+            <div class="flex flex-col gap-2.5 lg:gap-3.5">
+              <h3 class="product-card-header text-xl lg:text-2xl">Wreck Removal
+              </h3>
+              <p class="engineering-page-card-description text-sm md:text-base">Wreck Removal Insurance is an insurance
+                coverage that provides compensation to the shipowner for the removal of wreck
+                and other objects originating from the ship in the event of an accident that causes the ship to sink.
+              </p>
               <div class="">
                 <a href="/pages/general-insurance/marines/wreck-removal.html"
-                  class="product-card-button text-sm lg:text-md">
+                  class="product-card-button text-md md:text-lg">
                   Read More
                 </a>
               </div>

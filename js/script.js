@@ -7,7 +7,6 @@ const contractor = document.getElementById("contractor");
 const generalInsuranceSubmenu = document.getElementById(
   "general-insurance-submenu"
 );
-const contractorSubmenu = document.getElementById("contractor-submenu");
 
 // Get the current URL
 const currentUrl = window.location.pathname;
@@ -84,16 +83,5 @@ generalInsurance.addEventListener("click", (event) => {
 
 generalInsuranceSubmenu.addEventListener("mouseleave", () => {
   generalInsuranceSubmenu.classList.add("hidden");
-  isDropdownOpen = false;
-});
-
-contractor.addEventListener("click", (event) => {
-  event.stopPropagation(); // Prevent the click event from bubbling up to the dropdown
-  contractorSubmenu.classList.toggle("hidden");
-  isDropdownOpen = !isDropdownOpen;
-});
-
-contractorSubmenu.addEventListener("mouseleave", () => {
-  contractorSubmenu.classList.add("hidden");
   isDropdownOpen = false;
 });
