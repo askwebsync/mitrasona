@@ -36,11 +36,11 @@
         </button>
       </div>
       <ul id="menu" class="hidden flex flex-col md:flex md:justify-end md:flex-row">
-        <a class="px-4 py-2 text-sm sm:text-md lg:text-lg rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline active-page"
-          href="#">Home</a>
+        <a class="px-4 py-2 text-sm md:text-base rounded-lg focus:outline-none focus:shadow-outline" href="/index.html"
+          id="home">Home</a>
         <div id="dropdown" class="relative">
           <button id="dropdown-toggle"
-            class="flex flex-row items-center w-full px-4 py-2 text-sm sm:text-md lg:text-lg text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline">
+            class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline">
             <span class="nav-span">Product</span>
             <svg id="dropdown-icon" fill="currentColor" viewBox="0 0 20 20"
               class="inline w-4 h-4 transition-transform duration-200 transform">
@@ -50,9 +50,9 @@
             </svg>
           </button>
           <div id="dropdown-menu" class="absolute right-0 w-full origin-top-right rounded-md shadow-lg md:w-48 hidden">
-            <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+            <div class="px-2 py-2 bg-white rounded-md shadow">
               <a id="general-insurance"
-                class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                 href="#">General Insurance
                 <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
                   <path fill-rule="evenodd"
@@ -61,13 +61,19 @@
                 </svg>
               </a>
               <div id="general-insurance-submenu" class="hidden ml-3">
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="/surety-bond.html">Surety Bond</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="/property.html">Property All Risk</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                  href="/motor-vehicle.html">Motor Vehicle</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                  href="/liability.html">Liability</a>
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                  href="/all-marine.html">All Marine</a>
               </div>
               <a id="contractor"
-                class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                 href="#">Contractor
                 <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
                   <path fill-rule="evenodd"
@@ -76,40 +82,39 @@
                 </svg>
               </a>
               <div id="contractor-submenu" class="hidden ml-3">
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="contractor-risk.html">Contractor's All Risk</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="electronic-equipment.html">Electronic Equipment Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="heavy-equipment.html">Heavy Equipment Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="marchinery-breakdown.html">Machinery Breakdown Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
+                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="moveable-all.html">Moveable All Risk Insurance</a>
               </div>
             </div>
           </div>
         </div>
-        <a class="px-4 py-2 text-sm sm:text-md lg:text-lg bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
-          href="/gallery.html">Gallery</a>
-        <a class="px-4 py-2 text-sm sm:text-md lg:text-lg bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
-          href="/location.html">Location</a>
-        <a class="px-4 py-2 text-sm sm:text-md lg:text-lg bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline"
-          href="/contact.html">Contact</a>
+        <a class="px-4 py-2 text-sm md:text-base bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+          href="/gallery.html" id="gallery">Gallery</a>
+        <a class="px-4 py-2 text-sm md:text-base bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+          href="/location.html" id="location">Location</a>
+        <a class="px-4 py-2 text-sm md:text-base bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+          href="/contact.html" id="contact">Contact</a>
       </ul>
       </div>
     </nav>
   </header>
-
   <main>
     <section>
-      <div class="container mx-auto my-24 px-6 xl:px-12">
-        <div class="max-w-screen-md mx-auto p-5">
-          <div class="text-center mb-16">
-            <h3 class="contact-page-title">
+      <div class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
+        <div class="flex flex-col gap-6 md:gap-12">
+          <div class="flex flex-col gap-2 self-center items-center">
+            <h3 class="contact-page-title text-2xl md:text-3xl lg:text-5xl">
               Contact Us
             </h3>
-            <p class="mt-4 contact-page-subheader">
+            <p class="contact-page-subheader text-sm lg:text-base">
               Contact Us Any Time
             </p>
           </div>
@@ -150,7 +155,7 @@
               </div>
             </div>
 
-            <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="flex flex-col gap-3 lg:gap-7 -mx-3 mb-6">
               <div class="w-full px-3">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                   Your Message
@@ -160,8 +165,9 @@
                      text-gray-700 contact-page-input-border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                   </textarea>
               </div>
-              <div class="flex justify-center w-full px-3 mt-2">
-                <button class="items-center w-40 h-12 text-white bg-button-banner rounded-md">
+              <div class="flex items-center justify-center ">
+                <button
+                  class="contact-page-button-text flex justify-center items-center w-40 h-12 text-white bg-button-banner rounded-md">
                   Submit
                 </button>
               </div>
@@ -170,11 +176,7 @@
         </div>
       </div>
     </section>
-    <a href="https://wa.me/message/2CFRHSJQU3K3P1" class="float" target="_blank">
-      <i class="fa fa-whatsapp my-float"></i>
-    </a>
   </main>
-
   <footer class="footer-background">
     <div class="container mx-auto pt-16 pb-6 px-6 center">
       <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -211,7 +213,7 @@
             </div>
             <div class="items-center">
               <p class="ml:0 md:ml-2 text-white transition group-hover:text-white/75">
-                +62 832-1321-3212
+                <a href="tel:9051290512">+6281298444393</a>
               </p>
             </div>
             <div class="items-center">

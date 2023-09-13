@@ -27,11 +27,18 @@ nav>ul>a,
 .nav-span {
   font-family: 'Work Sans';
   font-style: normal;
+  font-weight: 400;
 }
 
+/* 
 nav>ul>a,
 .nav-span {
   color: #1F2933;
+} */
+
+.active-navbar {
+  color: #1F2933;
+  font-weight: bold;
 }
 
 h3 {
@@ -77,18 +84,14 @@ p {
 #menu a:hover,
 #dropdown-toggle:hover {
   background-color: #F3F4F6;
-  /* Adjust the background color as needed */
   color: #374151;
-  /* Adjust the text color as needed */
 }
 
 /* Add hover:bg and hover:text styles for submenu items */
 #general-insurance-submenu a:hover,
 #contractor-submenu a:hover {
   background-color: #F3F4F6;
-  /* Adjust the background color as needed */
   color: #374151;
-  /* Adjust the text color as needed */
 }
 
 .primary-color {
@@ -126,6 +129,14 @@ p {
   }
 }
 
+.flex-card-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 10px;
+  /* Optional: Add margin between cards */
+}
+
 .container-image-hero img {
   height: 100%;
   width: 100%;
@@ -143,9 +154,12 @@ p {
   height: 80px;
 }
 
-
 .bg-button-banner {
   background: #f79a1f;
+}
+
+.bg-button-banner:hover {
+  background: #EB8A0B;
 }
 
 .icon-container {
@@ -156,7 +170,13 @@ p {
 .responsive-iframe-wrapper {
   position: relative;
   padding-bottom: 56.25%;
-  /* 16:9 aspect ratio (height / width) */
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-iframe-wrapper-hero {
+  position: relative;
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
@@ -169,38 +189,69 @@ p {
   height: 100%;
 }
 
-.map-container {
-  position: relative;
-  width: 100%;
-}
-
-.map-wrapper {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  /* 16:9 aspect ratio (height / width) */
-  height: 0;
-}
-
-.map-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .visi-misi-header,
 .banner-header,
 .business-lines-header,
 .company-partner-header,
-.location-header,
 .business-lines-header,
 .business-header {
   font-family: "Sora";
   font-style: normal;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  line-height: 36px;
+  letter-spacing: -0.64px;
+}
+
+.svg-size {
+  width: 41px;
+  height: 40px;
+}
+
+.business-lines-description {
+  color: var(--netral-white, #FFF);
+  /* Work Sans/Body Reguler 16 */
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.32px;
+}
+
+.allmarine-card-header {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.product-card-header {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.48px;
+}
+
+.product-card-button {
+  color: var(--secondary-yellow, #F79A1F);
+  text-align: center;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration-line: underline;
+  letter-spacing: -0.96px;
+  text-underline-offset: 0.2em;
+}
+
+.product-card-button:hover {
+  color: #EB8A0B;
+}
+
+.business-lines-button-text {
+  color: var(--netral-white, #FFF);
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .visi-subheader,
@@ -209,14 +260,18 @@ p {
   font-family: Work Sans;
   font-style: normal;
   font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.48px;
 }
 
 .visi-description,
 .misi-description {
   color: #747474;
   font-family: Work Sans;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  line-height: 22px;
   letter-spacing: -0.32px;
 }
 
@@ -224,57 +279,61 @@ p {
   font-family: "Sora";
   font-style: normal;
   font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.02em;
 }
 
+.pdf-button {
+  color: var(--netral-white, #FFF);
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 700;
+}
 
+.pdf-text {
+  color: var(--netral-white, #FFF);
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 400;
+}
 
 .footer-yellow-header {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: -0.02em;
 }
 
 .footer-white-detail {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: -0.02em;
 }
 
 .contract-table-header {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: -0.02em;
 }
 
 .liability-card-header {
   font-family: "Work Sans";
   font-style: normal;
-  line-height: 22px;
-  letter-spacing: -0.02em;
-  text-align: center;
 }
 
+.location-header {
+  color: #000;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.64px;
+}
 
 .location-text {
-
-  font-family: 'Work Sans';
+  color: var(--netral-black, #1F2933);
+  font-family: Work Sans;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 22px;
-  letter-spacing: -0.02em;
-  color: #1F2933;
+  letter-spacing: -0.32px;
 }
 
 .bg-contract {
@@ -286,19 +345,12 @@ p {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: -0.02em;
 }
 
 .liability-card-detail {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;
-  line-height: 22px;
-  text-align: left;
-  letter-spacing: -0.02em;
 }
 
 .liability-container-shadow {
@@ -314,20 +366,25 @@ p {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
   color: #717171;
-  letter-spacing: -0.02em;
+}
+
+.bg-container-business-lines-general-insurance {
+  border-right: 1px solid var(--netral-white, #FFF);
+  background: linear-gradient(92deg, #1278BE -7.61%, rgba(18, 120, 190, 0.00) 222.72%);
 }
 
 .bg-container-business-lines {
-  background: linear-gradient(92.2deg,
-      #1278be -7.61%,
-      rgba(18, 120, 190, 0) 222.72%);
+  background: linear-gradient(92deg, #1278BE -7.61%, rgba(18, 120, 190, 0.00) 222.72%);
 }
 
-/* Slideshow container */
-/* Caption text */
+@media screen and (max-width: 767px) {
+  .bg-container-business-lines-general-insurance {
+    border-bottom: 1px solid var(--netral-white, #FFF);
+    background: linear-gradient(92deg, #1278BE -7.61%, rgba(18, 120, 190, 0.00) 222.72%);
+  }
+}
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -433,11 +490,10 @@ p {
 }
 
 .slide {
-  height: 200px;
   width: 250px;
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 25px;
   perspective: 100px;
 }
 
@@ -491,39 +547,47 @@ img:hover {
   font-family: "Sora";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 48px;
-  /* identical to box height, or 100% */
-
-  letter-spacing: -0.02em;
+  letter-spacing: -0.96px;
 }
 
 .contact-page-subheader {
-  font-family: "Work Sans";
+  /* Work Sans/Body Reguler 16 */
+  font-family: Work Sans;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 22px;
-  /* identical to box height, or 138% */
+  /* 137.5% */
+  letter-spacing: -0.32px;
+}
 
-  letter-spacing: -0.02em;
-  font-feature-settings: "calt" off;
-
-  color: #000000;
+.contact-page-button-text {
+  color: var(--White, #FFF);
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.32px;
 }
 
 .contact-page-input-border {
   border: 1px solid #f79a1f;
 }
 
+.engineering-page-card-description {
+  color: var(--colour-primary-neutral-black, #212121);
+  /* Work Sans/Body Reguler 16 */
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.32px;
+}
+
 .gallery-header {
   font-family: "Sora";
   font-style: normal;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 48px;
-
-  letter-spacing: -0.02em;
+  letter-spacing: -0.96px;
 }
 
 .max-w-custom-xs {
@@ -549,21 +613,22 @@ img:hover {
 .dropdown-content-footer {
   display: none;
   position: absolute;
-  background-color: gray;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 12px;
 }
 
 .dropdown-content-footer a {
-  color: white;
-  padding: 12px 16px;
+  background-color: #F3F4F6;
+  color: #374151;
+  padding: 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: gray;
+  background-color: #F3F4F6;
+  color: #374151;
 }
 
 .dropdown-footer:hover .dropdown-content-footer {
