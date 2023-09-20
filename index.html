@@ -6,15 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <meta name="google-site-verification" content="j6kpjMyQGgtdpAMr_q8zouyvSeNsXTBnSyUeE_guiz0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700&family=Work+Sans:wght@400;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="images/icon/logo.png" />
+  <link rel="icon" href="images/icon/logo.webp" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Perusahaan Asuransi & Kontraktor - Mitra Sona Persada</title>
 </head>
@@ -23,11 +18,12 @@
   <header class="navbar-shadow">
     <nav class="container mx-auto px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
-        <a href="../../index.html" class="focus:outline-none">
-          <img src="/images/icon/logo.png" alt="logo-perusahaan" class="w-20 h-20" />
+        <a href="/index.html" class="focus:outline-none">
+          <img src="/images/icon/logo.webp" alt="logo-perusahaan" class="w-20 h-20" />
         </a>
-        <button id="mobile-menu-toggle" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
-          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+        <button id="mobile-menu-toggle" aria-label="mobile-menu-button" type="button"
+          class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
+          <svg fill="currentColor" aria-labelledby="mobile-menu-toggle" viewBox="0 0 20 20" class="w-6 h-6">
             <path id="menu-icon" fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
@@ -41,7 +37,7 @@
         <a class="px-4 py-2 text-sm md:text-base rounded-lg focus:outline-none focus:shadow-outline" href="/index.html"
           id="home">Home</a>
         <div id="dropdown" class="relative">
-          <button id="dropdown-toggle"
+          <button id="dropdown-toggle" aria-label="product-dropdown-button" type="button"
             class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline">
             <span class="nav-span">Product</span>
             <svg id="dropdown-icon" fill="currentColor" viewBox="0 0 20 20"
@@ -56,7 +52,7 @@
               <a id="general-insurance"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                 href="#">General Insurance
-                <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
+                <svg fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20" class="inline w-4 h-4">
                   <path fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
@@ -98,7 +94,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="flex flex-col items-start gap-6 lg:py-5 lg:gap-14">
             <div class="flex flex-col gap-6 lg:gap-12">
-              <h1 class="hero-heading text-2xl lg:text-3xl xl:text-5xl">WELCOME TO <br> <span>PT Mitra Sona
+              <h1 class="hero-heading text-2xl lg:text-3xl">WELCOME TO<br><span>PT Mitra Sona
                   Persada</span>
               </h1>
               <p class="hero-text text-sm lg:text-base max-w-xl">PT. Mitra Sona Persada has been established
@@ -118,8 +114,7 @@
             </div>
           </div>
           <div class="container-image-hero">
-            <img class="rounded-md object-cover" loading="lazy" src="/images/hero-image.jpeg"
-              alt="Company Hero Image" />
+            <img class="rounded-md object-cover" src="/images/hero-image.jpeg" alt="Company Hero Image" />
           </div>
         </div>
       </div>
@@ -138,7 +133,7 @@
             </div>
             <div class="flex flex-col gap-8">
               <div class="flex items-start gap-3 md:gap-6">
-                <img src="/images/icon/send.png" alt="logo vision" class="svg-size object-cover">
+                <img src="/images/icon/send.webp" alt="logo vision" class="svg-size object-cover">
                 <div class="flex flex-col gap-2 lg:gap-4">
                   <h3 class="visi-subheader text-lg lg:text-2xl">Company Vision</h3>
                   <p class="visi-description text-sm lg:text-base">
@@ -147,7 +142,7 @@
                 </div>
               </div>
               <div class="flex items-start gap-3 md:gap-6">
-                <img src="/images/icon/users.png" alt="logo vision" class="svg-size object-cover">
+                <img src="/images/icon/users.webp" alt="logo vision" class="svg-size object-cover">
                 <div class="flex flex-col gap-2 lg:gap-4">
                   <h3 class="misi-subheader text-lg lg:text-2xl">Company Mission</h3>
                   <div>
@@ -179,14 +174,13 @@
             </h2>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2">
-            <div
-              class="bg-container-business-lines-general-insurance text-white text-left px-8 py-8 md:px-12 lg:px-24 xl:px-32">
+            <div class="bg-container-business-lines-general-insurance text-left px-8 py-8 md:px-12 lg:px-24">
               <div class="flex flex-col gap-4 md:gap-6">
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2 h-auto md:h-42 xl:h-32">
                   <h3 class="business-lines-header text-white text-lg lg:text-2xl xl:text-3xl">
                     General Insurance
                   </h3>
-                  <p class="business-lines-description text-sm lg:text-base">
+                  <p class="business-lines-description text-sm lg:text-base text-white">
                     Insurance that provides one of the benefits in the form of compensation to the insured, in the event
                     of damage or loss
                     of the insured material
@@ -200,19 +194,19 @@
                 </div>
               </div>
             </div>
-            <div class="bg-container-business-lines text-white text-left px-8 py-8 md:px-12 lg:px-24 xl:px-32">
+            <div class="bg-container-business-lines text-left px-8 py-8 md:px-12 lg:px-24">
               <div class="flex flex-col gap-4 md:gap-6">
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2 h-auto md:h-42 xl:h-32">
                   <h3 class="business-lines-header text-white text-lg lg:text-2xl xl:text-3xl">
                     Contractor Insurance
                   </h3>
-                  <p class="business-lines-description text-sm lg:text-base">
+                  <p class="business-lines-description text-sm lg:text-base text-white">
                     Insurance protection for companies supplying military equipment,ensuring they're
                     financially secure in case of unexpected events.
                   </p>
                 </div>
                 <div>
-                  <a href="contractor.html"
+                  <a href="/contractor.html"
                     class="business-lines-button-text text-sm md:text-base flex flex-row justify-center items-center w-24 md:w-32 h-10 lg:w-36 lg:h-12 text-white bg-button-banner rounded">
                     Read More
                   </a>
@@ -234,66 +228,71 @@
           <div class="slider">
             <div class="slide-track">
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/1.png" alt="company-parter1" />
+                <img class="w-full" src="/images/Company-Partner/askrindo.webp" alt="pt.askrindo" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/2.png" alt="company-parter2" />
+                <img class="w-full" src="/images/Company-Partner/jasindo.webp" alt="pt.asuransi jasindo" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/3.png" alt="company-parter3" />
+                <img class="w-full" src="/images/Company-Partner/jamkrindo.webp" alt="pt.asuransi jamkrindo" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/5.png" alt="company-parter4" />
+                <img class="w-full" src="/images/Company-Partner/jamkrindo-syariah.webp"
+                  alt="pt.asuransi jamkrindo syariah" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/6.png" alt="company-parter5" />
+                <img class="w-full" src="/images/Company-Partner/bri-insurance.webp" alt="pt.bri insurance" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/7.jpg" alt="company-parter6" />
+                <img class="w-full" src="/images/Company-Partner/asuransi-bhayangkara.webp"
+                  alt="pt.asuransi bhakti bayangkara" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/8.png" alt="company-parter7" />
+                <img class="w-full" src="/images/Company-Partner/maxium-insurance.webp" alt="pt.maximus insurance" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/9.png" alt="company-parter8" />
+                <img class="w-full" src="/images/Company-Partner/sinarmas.webp" alt="pt.asuransi sinarmas" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/10.png" alt="company-parter9" />
+                <img class="w-full" src="/images/Company-Partner/sinarmas-syariah.webp"
+                  alt="pt.asuransi sinarmas syariah" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/11.png" alt="company-parter10" />
+                <img class="w-full" src="/images/Company-Partner/bosowa-insurance.webp" alt="pt.bosowa asuransi" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/12.jpeg" alt="company-parter11" />
+                <img class="w-full" src="/images/Company-Partner/tugu-insurance.webp" alt="pt.asuransi tugu" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/13.png" alt="company-parter12" />
+                <img class="w-full" src="/images/Company-Partner/pln-insurance.webp" alt="pt.pln insurance" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/14.png" alt="company-parter13" />
+                <img class="w-full" src="/images/Company-Partner/bank-mandiri.webp" alt="bank mandiri" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/15.png" alt="company-parter14" />
+                <img class="w-full" src="/images/Company-Partner/bank-bri.webp" alt="bank rakyat indonesia" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/16.png" alt="company-parter15" />
+                <img class="w-full" src="/images/Company-Partner/bank-bni.webp" alt="bank negara indonesia" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/17.png" alt="company-parter16" />
+                <img class="w-full" src="/images/Company-Partner/bank-jogja.webp" alt="bank jogja" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/18.png" alt="company-parter17" />
+                <img class="w-full" src="/images/Company-Partner/bank-kalsel.webp" alt="bank kalimantan selatan" />
               </div>
               <div class="slide">
-                <img class="w-full " src="/images/Company-Partner/19.png" alt="company-parter18" />
+                <img class="w-full" src="/images/Company-Partner/bank-bukopin.webp" alt="bank bukopin syariah" />
               </div>
               <div class="slide">
-                <img class="w-full" src="/images/Company-Partner/20.jpeg" alt="company-parter19" />
+                <img class="w-full" src="/images/Company-Partner/bank-bukopin-syariah.webp" alt="bank bukopin" />
+              </div>
+              <div class="slide">
+                <img class="w-full" src="/images/Company-Partner/ikonoa.webp" alt="pt.ikonoa solusindo asia" />
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   </main>
@@ -305,7 +304,8 @@
             <ul class="space-y-4 text-sm">
               <li>
                 <div class="max-w-md mb-2">
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo.png" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo.webp"
+                    alt="logo-perusahaan" />
                 </div>
               </li>
               <li>
@@ -313,8 +313,9 @@
                   <p class="text-white text-base mt-2 max-w-custom-xs">
                     Register and Supervised
                   </p>
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/OJK_Logo.png" />
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo-mari-berasuransi.jpeg" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/OJK_Logo.webp" alt="logo-ojk" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo-mari-berasuransi.webp"
+                    alt="logo-mari-asuransi" />
                 </div>
               </li>
             </ul>
@@ -331,7 +332,7 @@
             </div>
             <div class="items-center">
               <p class="ml:0 md:ml-2 text-white transition group-hover:text-white/75">
-                <a href="tel:9051290512">+6281298444393</a>
+                <a href="tel:6281298444393">+6281298444393</a>
               </p>
             </div>
             <div class="items-center">
@@ -340,10 +341,10 @@
               </p>
             </div>
             <div class="items-center">
-              <p class="text-white transition group-hover:text-white/75" href="/">
+              <p class="text-white transition group-hover:text-white/75">
                 Monday - Friday :
               </p>
-              <p class="text-white transition group-hover:text-white/75" href="/">
+              <p class="text-white transition group-hover:text-white/75">
                 08:00 - 17:00
               </p>
             </div>

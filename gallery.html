@@ -6,13 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" href="images/icon/logo.png" />
+  <link rel="icon" href="images/icon/logo.webp" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Gallery - Mitra Sona Persada</title>
 </head>
@@ -21,11 +18,12 @@
   <header class="navbar-shadow">
     <nav class="container mx-auto px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
-        <a href="../../index.html" class="focus:outline-none">
-          <img src="/images/icon/logo.png" alt="logo-perusahaan" class="w-20 h-20" />
+        <a href="/index.html" class="focus:outline-none">
+          <img src="/images/icon/logo.webp" alt="logo-perusahaan" class="w-20 h-20" />
         </a>
-        <button id="mobile-menu-toggle" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
-          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+        <button id="mobile-menu-toggle" aria-label="mobile-menu-button" type="button"
+          class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
+          <svg fill="currentColor" aria-labelledby="mobile-menu-toggle" viewBox="0 0 20 20" class="w-6 h-6">
             <path id="menu-icon" fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
@@ -39,10 +37,10 @@
         <a class="px-4 py-2 text-sm md:text-base rounded-lg focus:outline-none focus:shadow-outline" href="/index.html"
           id="home">Home</a>
         <div id="dropdown" class="relative">
-          <button id="dropdown-toggle"
+          <button id="dropdown-toggle" aria-label="product-dropdown-button" type="button"
             class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline">
             <span class="nav-span">Product</span>
-            <svg id="dropdown-icon" fill="currentColor" viewBox="0 0 20 20"
+            <svg id="dropdown-icon" fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20"
               class="inline w-4 h-4 transition-transform duration-200 transform">
               <path fill-rule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -54,7 +52,7 @@
               <a id="general-insurance"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                 href="#">General Insurance
-                <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
+                <svg fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20" class="inline w-4 h-4">
                   <path fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
@@ -94,56 +92,58 @@
     <section>
       <div class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
         <div class="flex flex-col gap-12">
-          <h3 class="text-center text-2xl lg:text-3xl gallery-header">Program Overview</h3>
+          <h2 class="business-lines-header text-xl sm:text-2xl lg:text-3xl">Program Overview</h2>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/satu.png" alt="Gambar1" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/satu.webp" alt="Gambar1" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/dua.png" alt="Gambar2" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/dua.webp" alt="Gambar2" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/tiga.png" alt="Gambar3" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/tiga.webp" alt="Gambar3" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/empat.png" alt="Gambar4" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/empat.webp" alt="Gambar4" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/lima.png" alt="Gambar5" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/lima.webp" alt="Gambar5" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/enam.png" alt="Gambar6" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/enam.webp" alt="Gambar6" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/tujuh.png" alt="Gambar7" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/tujuh.webp" alt="Gambar7" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/delapan.png" alt="Gambar8" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/delapan.webp" alt="Gambar8" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/sembilan.png" alt="Gambar9" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/sembilan.webp" alt="Gambar9" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/sepuluh.png" alt="Gambar10" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/sepuluh.webp" alt="Gambar10" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/sebelas.png" alt="Gambar11" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/sebelas.webp" alt="Gambar11" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/duabelas.png" alt="Gambar12" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/duabelas.webp" alt="Gambar12" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/tigabelas.png" alt="Gambar13" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/tigabelas.webp"
+                alt="Gambar13" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/enambelas.png" alt="Gambar14" />
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/enambelas.webp"
+                alt="Gambar14" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/tujuhbelas.png"
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/tujuhbelas.webp"
                 alt="Gambar15" />
             </div>
             <div class="w-full md:w-auto">
-              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/delapanbelas.png"
+              <img class="w-72 h-40 object-cover rounded shadow-md" src="images/Gallery/delapanbelas.webp"
                 alt="Gambar16" />
             </div>
           </div>
@@ -153,67 +153,70 @@
     <section>
       <div class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
         <div class="flex flex-col gap-12">
-          <h3 class="text-center text-2xl lg:text-3xl gallery-header">Our Partners</h3>
+          <h2 class="business-lines-header text-xl sm:text-2xl lg:text-3xl">Our Partners</h2>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/1.png" alt="pt.askrindo" />
+              <img class="gallery-img" src="/images/Company-Partner/askrindo.webp" alt="pt.askrindo" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/2.png" alt="pt.asuransi jasindo" />
+              <img class="gallery-img" src="/images/Company-Partner/jasindo.webp" alt="pt.asuransi jasindo" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/3.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/jamkrindo.webp" alt="pt.asuransi jamkrindo" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/4.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/jamkrindo-syariah.webp"
+                alt="pt.asuransi jamkrindo syariah" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/5.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/bri-insurance.webp" alt="pt.bri insurance" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/6.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/asuransi-bhayangkara.webp"
+                alt="pt.asuransi bhakti bayangkara" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/7.jpg" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/maxium-insurance.webp" alt="pt.maximus insurance" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/8.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/sinarmas.webp" alt="pt.asuransi sinarmas" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/9.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/sinarmas-syariah.webp"
+                alt="pt.asuransi sinarmas syariah" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/10.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/bosowa-insurance.webp" alt="pt.bosowa asuransi" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/11.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/tugu-insurance.webp" alt="pt.asuransi tugu" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/12.jpeg" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/pln-insurance.webp" alt="pt.pln insurance" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/13.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/bank-mandiri.webp" alt="bank mandiri" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/14.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/bank-bri.webp" alt="bank rakyat indonesia" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/15.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/bank-bni.webp" alt="bank negara indonesia" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/16.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/bank-jogja.webp" alt="bank jogja" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/17.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/bank-kalsel.webp" alt="bank kalimantan selatan" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/18.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/bank-bukopin.webp" alt="bank bukopin syariah" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/19.png" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/bank-bukopin-syariah.webp" alt="bank bukopin" />
             </div>
             <div class="gallery-container-img">
-              <img class="gallery-img" src="/images/Company-Partner/20.jpeg" alt="" />
+              <img class="gallery-img" src="/images/Company-Partner/ikonoa.webp" alt="pt.ikonoa solusindo asia" />
             </div>
           </div>
         </div>
@@ -228,7 +231,7 @@
             <ul class="space-y-4 text-sm">
               <li>
                 <div class="max-w-md mb-2">
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo.png" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo.webp" />
                 </div>
               </li>
               <li>
@@ -236,8 +239,8 @@
                   <p class="text-white text-base mt-2 max-w-custom-xs">
                     Register and Supervised
                   </p>
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/OJK_Logo.png" />
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo-mari-berasuransi.jpeg" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/OJK_Logo.webp" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo-mari-berasuransi.webp" />
                 </div>
               </li>
             </ul>
@@ -254,7 +257,7 @@
             </div>
             <div class="items-center">
               <p class="ml:0 md:ml-2 text-white transition group-hover:text-white/75">
-                <a href="tel:9051290512">+6281298444393</a>
+                <a href="tel:6281298444393">+6281298444393</a>
               </p>
             </div>
             <div class="items-center">

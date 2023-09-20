@@ -6,13 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" href="images/icon/logo.png" />
+  <link rel="icon" href="images/icon/logo.webp" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Contractor - Mitra Sona Persada</title>
 </head>
@@ -21,11 +18,12 @@
   <header class="navbar-shadow">
     <nav class="container mx-auto px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
-        <a href="../../index.html" class="focus:outline-none">
-          <img src="/images/icon/logo.png" alt="logo-perusahaan" class="w-20 h-20" />
+        <a href="/index.html" class="focus:outline-none">
+          <img src="/images/icon/logo.webp" alt="logo-perusahaan" class="w-20 h-20" />
         </a>
-        <button id="mobile-menu-toggle" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
-          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+        <button id="mobile-menu-toggle" aria-label="mobile-menu-button" type="button"
+          class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
+          <svg fill="currentColor" aria-labelledby="mobile-menu-button" viewBox="0 0 20 20" class="w-6 h-6">
             <path id="menu-icon" fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
@@ -39,10 +37,10 @@
         <a class="px-4 py-2 text-sm md:text-base rounded-lg focus:outline-none focus:shadow-outline" href="/index.html"
           id="home">Home</a>
         <div id="dropdown" class="relative">
-          <button id="dropdown-toggle"
+          <button id="dropdown-toggle" aria-label="product-dropdown-button" type="button"
             class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline">
             <span class="nav-span">Product</span>
-            <svg id="dropdown-icon" fill="currentColor" viewBox="0 0 20 20"
+            <svg id="dropdown-icon" aria-labelledby="icon-dropdown" fill="currentColor" viewBox="0 0 20 20"
               class="inline w-4 h-4 transition-transform duration-200 transform">
               <path fill-rule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -54,7 +52,7 @@
               <a id="general-insurance"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                 href="#">General Insurance
-                <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
+                <svg fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20" class="inline w-4 h-4">
                   <path fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
@@ -95,7 +93,7 @@
       <div class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
         <div class="flex flex-col gap-12">
           <div class="flex flex-col items-center gap-4 md:gap-6">
-            <h2 class="business-header text-xl sm:text-2xl lg:text-3xl">Contractor</h2>
+            <h2 class="business-lines-header text-xl sm:text-2xl lg:text-3xl">Contractor</h2>
             <p class="general-product-card-description text-sm md:text-base">
               PT Mitra Sona Persada has been established since 2015 which is
               engaged in the supplier of spare parts and procurement of military
@@ -217,16 +215,14 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
     </section>
     <section class="background-pdf mb-12">
       <div class="container mx-auto px-12">
-        <div class="flex flex-col justify-between gap-6 md:flex-row p-12 lg:p-24">
+        <div class="flex flex-col justify-between gap-6 md:flex-row p-12 lg:p-20">
           <div class="inline-flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="icon-pdf" width="72" height="72"
+              viewBox="0 0 72 72" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M63 20.25V63C63 65.3869 62.0518 67.6761 60.364 69.364C58.6761 71.0518 56.3869 72 54 72H49.5V67.5H54C55.1935 67.5 56.3381 67.0259 57.182 66.182C58.0259 65.3381 58.5 64.1935 58.5 63V20.25H49.5C47.7098 20.25 45.9929 19.5388 44.727 18.273C43.4612 17.0071 42.75 15.2902 42.75 13.5V4.5H18C16.8065 4.5 15.6619 4.97411 14.818 5.81802C13.9741 6.66193 13.5 7.80653 13.5 9V49.5H9V9C9 6.61305 9.94821 4.32387 11.636 2.63604C13.3239 0.948212 15.6131 0 18 0L42.75 0L63 20.25ZM7.2 53.325H0V71.3205H3.5595V65.2815H7.173C8.4645 65.2815 9.5625 65.025 10.467 64.503C11.3805 63.9765 12.078 63.2655 12.5505 62.37C13.0409 61.4303 13.2899 60.3834 13.275 59.3235C13.275 58.1985 13.0365 57.1815 12.564 56.277C12.094 55.3779 11.3755 54.6328 10.494 54.1305C9.594 53.5905 8.5005 53.325 7.2 53.325ZM9.6525 59.3235C9.66872 59.9164 9.53728 60.504 9.27 61.0335C9.03021 61.4945 8.65696 61.8725 8.199 62.118C7.67515 62.3772 7.09571 62.5039 6.5115 62.487H3.546V56.16H6.516C7.497 56.16 8.2665 56.43 8.82 56.9745C9.3735 57.5235 9.6525 58.3065 9.6525 59.3235ZM15.129 53.325V71.3205H21.699C23.5035 71.3205 25.002 70.9605 26.19 70.254C27.3922 69.5347 28.331 68.4476 28.8675 67.1535C29.4525 65.8035 29.7495 64.1745 29.7495 62.2755C29.7495 60.3855 29.457 58.7745 28.8675 57.438C28.3373 56.1587 27.4075 55.0853 26.217 54.378C25.029 53.676 23.5215 53.325 21.6945 53.325H15.129ZM18.6885 56.2275H21.222C22.338 56.2275 23.247 56.4525 23.9625 56.9115C24.7052 57.3972 25.2655 58.1158 25.5555 58.9545C25.911 59.859 26.0865 60.9885 26.0865 62.343C26.1005 63.2405 25.9976 64.136 25.7805 65.007C25.6202 65.6939 25.3199 66.3404 24.8985 66.906C24.507 67.4106 23.9882 67.802 23.3955 68.04C22.701 68.2999 21.9634 68.4251 21.222 68.409H18.6885V56.2275ZM35.532 64.161V71.3205H31.977V53.325H43.443V56.2635H35.532V61.29H42.759V64.161H35.532Z"
                 fill="white" />
@@ -252,7 +248,7 @@
             <ul class="space-y-4 text-sm">
               <li>
                 <div class="max-w-md mb-2">
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo.png" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo.webp" />
                 </div>
               </li>
               <li>
@@ -260,8 +256,8 @@
                   <p class="text-white text-base mt-2 max-w-custom-xs">
                     Register and Supervised
                   </p>
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/OJK_Logo.png" />
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo-mari-berasuransi.jpeg" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/OJK_Logo.webp" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo-mari-berasuransi.webp" />
                 </div>
               </li>
             </ul>
@@ -278,7 +274,7 @@
             </div>
             <div class="items-center">
               <p class="ml:0 md:ml-2 text-white transition group-hover:text-white/75">
-                <a href="tel:9051290512">+6281298444393</a>
+                <a href="tel:6281298444393">+6281298444393</a>
               </p>
             </div>
             <div class="items-center">
@@ -287,10 +283,10 @@
               </p>
             </div>
             <div class="items-center">
-              <p class="text-white transition group-hover:text-white/75" href="/">
+              <p class="text-white transition group-hover:text-white/75">
                 Monday - Friday :
               </p>
-              <p class="text-white transition group-hover:text-white/75" href="/">
+              <p class="text-white transition group-hover:text-white/75">
                 08:00 - 17:00
               </p>
             </div>

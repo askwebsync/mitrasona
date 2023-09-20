@@ -6,13 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" href="images/icon/logo.png" />
+  <link rel="icon" href="images/icon/logo.webp" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Our Location - PT.Mitra Sona Persada</title>
 </head>
@@ -22,10 +19,10 @@
     <nav class="container mx-auto px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
         <a href="/index.html" class="focus:outline-none">
-          <img src="/images/icon/logo.png" alt="logo-perusahaan" class="w-20 h-20" />
+          <img src="/images/icon/logo.webp" alt="logo-perusahaan" class="w-20 h-20" />
         </a>
-        <button id="mobile-menu-toggle" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
-          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+        <button id="dropdown-toggle" aria-label="mobile-menu-button" type="button">
+          <svg fill="currentColor" aria-labelledby="mobile-menu-button" viewBox="0 0 20 20" class="w-6 h-6">
             <path id="menu-icon" fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
@@ -39,10 +36,10 @@
         <a class="px-4 py-2 text-sm md:text-base rounded-lg focus:outline-none focus:shadow-outline" href="/index.html"
           id="home">Home</a>
         <div id="dropdown" class="relative">
-          <button id="dropdown-toggle"
+          <button id="dropdown-toggle" aria-label="product-dropdown-button"
             class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline">
             <span class="nav-span">Product</span>
-            <svg id="dropdown-icon" fill="currentColor" viewBox="0 0 20 20"
+            <svg id="dropdown-icon" aria-labelledby="icon-dropdown" fill="currentColor" viewBox="0 0 20 20"
               class="inline w-4 h-4 transition-transform duration-200 transform">
               <path fill-rule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -103,7 +100,8 @@
             <div class="flex flex-col items-start gap-4 md:gap-6 lg:gap-8">
               <h2 class="location-header text-lg lg:text-2xl">Our Office</h2>
               <div class="flex items-center justify-center gap-3 md:gap-6">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="icon-address" width="36" height="36"
+                  viewBox="0 0 36 36" fill="none">
                   <path
                     d="M31.5 15C31.5 25.5 18 34.5 18 34.5C18 34.5 4.5 25.5 4.5 15C4.5 11.4196 5.92232 7.9858 8.45406 5.45406C10.9858 2.92232 14.4196 1.5 18 1.5C21.5804 1.5 25.0142 2.92232 27.5459 5.45406C30.0777 7.9858 31.5 11.4196 31.5 15Z"
                     stroke="#F79A1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -116,17 +114,19 @@
                 </address>
               </div>
               <div class="flex items-center justify-center gap-3 md:gap-6">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="icon-phone" width="36" height="36"
+                  viewBox="0 0 36 36" fill="none">
                   <path
                     d="M22.5751 7.5C24.0402 7.78585 25.3867 8.50239 26.4422 9.5579C27.4978 10.6134 28.2143 11.9599 28.5001 13.425M22.5751 1.5C25.6191 1.83815 28.4575 3.20126 30.6245 5.36551C32.7915 7.52976 34.1582 10.3665 34.5001 13.41M33.0001 25.38V29.88C33.0018 30.2978 32.9163 30.7113 32.7489 31.094C32.5816 31.4768 32.3361 31.8204 32.0283 32.1028C31.7204 32.3852 31.357 32.6002 30.9613 32.7341C30.5655 32.8679 30.1462 32.9176 29.7301 32.88C25.1144 32.3785 20.6806 30.8012 16.7851 28.275C13.1609 25.972 10.0881 22.8993 7.78514 19.275C5.25011 15.3618 3.67251 10.9065 3.18014 6.27C3.14266 5.8552 3.19196 5.43714 3.32489 5.04244C3.45783 4.64773 3.6715 4.28503 3.95229 3.97743C4.23309 3.66983 4.57485 3.42406 4.95583 3.25578C5.33681 3.0875 5.74865 3.00039 6.16514 3H10.6651C11.3931 2.99284 12.0988 3.25062 12.6508 3.7253C13.2027 4.19998 13.5633 4.85917 13.6651 5.58C13.8551 7.0201 14.2073 8.43409 14.7151 9.795C14.917 10.3319 14.9606 10.9154 14.841 11.4763C14.7214 12.0373 14.4434 12.5522 14.0401 12.96L12.1351 14.865C14.2705 18.6203 17.3798 21.7297 21.1351 23.865L23.0401 21.96C23.448 21.5567 23.9629 21.2788 24.5238 21.1591C25.0848 21.0395 25.6683 21.0832 26.2051 21.285C27.5661 21.7928 28.98 22.1451 30.4201 22.335C31.1488 22.4378 31.8142 22.8048 32.2899 23.3662C32.7656 23.9277 33.0184 24.6444 33.0001 25.38Z"
                     stroke="#F79A1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <p class="location-text text-sm lg:text-base">
-                  <a href="tel:9051290512">+6281298444393</a>
+                  <a href="tel:6281298444393">+6281298444393</a>
                 </p>
               </div>
               <div class="flex items-center justify-center gap-3 md:gap-6">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="icon-email" width="36" height="36"
+                  viewBox="0 0 36 36" fill="none">
                   <path
                     d="M6 6H30C31.65 6 33 7.35 33 9V27C33 28.65 31.65 30 30 30H6C4.35 30 3 28.65 3 27V9C3 7.35 4.35 6 6 6Z"
                     stroke="#F79A1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -141,7 +141,8 @@
             <div class="flex flex-col items-start self-stretch gap-4 md:gap-6 lg:gap-8">
               <h3 class="location-header text-lg lg:text-2xl">Working Hours</h3>
               <div class="flex items-center justify-center gap-3 md:gap-6">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="icon-clock" width="36" height="36"
+                  viewBox="0 0 36 36" fill="none">
                   <path
                     d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z"
                     stroke="#F79A1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -154,7 +155,8 @@
 
               </div>
               <div class="flex items-center justify-center gap-3 md:gap-6">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="icon-clock" width="36" height="36"
+                  viewBox="0 0 36 36" fill="none">
                   <path
                     d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z"
                     stroke="#F79A1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -179,7 +181,7 @@
             <ul class="space-y-4 text-sm">
               <li>
                 <div class="max-w-md mb-2">
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo.png" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo.webp" />
                 </div>
               </li>
               <li>
@@ -187,8 +189,8 @@
                   <p class="text-white text-base mt-2 max-w-custom-xs">
                     Register and Supervised
                   </p>
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/OJK_Logo.png" />
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo-mari-berasuransi.jpeg" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/OJK_Logo.webp" />
+                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo-mari-berasuransi.webp" />
                 </div>
               </li>
             </ul>
@@ -205,7 +207,7 @@
             </div>
             <div class="items-center">
               <p class="ml:0 md:ml-2 text-white transition group-hover:text-white/75">
-                <a href="tel:9051290512">+6281298444393</a>
+                <a href="tel:6281298444393">+6281298444393</a>
               </p>
             </div>
             <div class="items-center">
@@ -214,10 +216,10 @@
               </p>
             </div>
             <div class="items-center">
-              <p class="text-white transition group-hover:text-white/75" href="/">
+              <p class="text-white transition group-hover:text-white/75">
                 Monday - Friday :
               </p>
-              <p class="text-white transition group-hover:text-white/75" href="/">
+              <p class="text-white transition group-hover:text-white/75">
                 08:00 - 17:00
               </p>
             </div>
