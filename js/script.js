@@ -1,3 +1,19 @@
+// Event Listeners
+const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+const dropdown = document.getElementById("dropdown");
+const dropdownMenu = document.getElementById("dropdown-menu");
+const generalInsurance = document.getElementById("general-insurance");
+const generalInsuranceSubmenu = document.getElementById(
+  "general-insurance-submenu"
+);
+
+mobileMenuToggle.addEventListener("click", toggleMobileMenu);
+dropdown.addEventListener("click", toggleDropdown);
+dropdown.addEventListener("mouseleave", handleDropdownMouseLeave);
+dropdownMenu.addEventListener("mouseenter", handleDropdownMouseEnter);
+dropdownMenu.addEventListener("mouseleave", handleDropdownMouseLeave);
+generalInsurance.addEventListener("click", toggleGeneralInsuranceSubmenu);
+
 // Function to toggle the mobile menu
 function toggleMobileMenu() {
   const menu = document.getElementById("menu");
@@ -67,22 +83,6 @@ function highlightActiveNavLink() {
     }
   });
 }
-
-// Event Listeners
-const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
-const dropdown = document.getElementById("dropdown");
-const dropdownMenu = document.getElementById("dropdown-menu");
-const generalInsurance = document.getElementById("general-insurance");
-const generalInsuranceSubmenu = document.getElementById(
-  "general-insurance-submenu"
-);
-
-mobileMenuToggle.addEventListener("click", toggleMobileMenu);
-dropdown.addEventListener("click", toggleDropdown);
-dropdown.addEventListener("mouseleave", handleDropdownMouseLeave);
-dropdownMenu.addEventListener("mouseenter", handleDropdownMouseEnter);
-dropdownMenu.addEventListener("mouseleave", handleDropdownMouseLeave);
-generalInsurance.addEventListener("click", toggleGeneralInsuranceSubmenu);
 
 // Initial actions when the page loads
 truncateText(".engineering-page-card-description", 100);
