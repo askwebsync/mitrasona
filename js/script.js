@@ -9,9 +9,9 @@ const generalInsuranceSubmenu = document.getElementById(
 
 mobileMenuToggle.addEventListener("click", toggleMobileMenu);
 dropdown.addEventListener("click", toggleDropdown);
-dropdown.addEventListener("mouseleave", handleDropdownMouseLeave);
+// dropdown.addEventListener("mouseleave", handleDropdownMouseLeave);
 dropdownMenu.addEventListener("mouseenter", handleDropdownMouseEnter);
-dropdownMenu.addEventListener("mouseleave", handleDropdownMouseLeave);
+// dropdownMenu.addEventListener("mouseleave", handleDropdownMouseLeave);
 generalInsurance.addEventListener("click", toggleGeneralInsuranceSubmenu);
 
 // Function to toggle the mobile menu
@@ -32,12 +32,12 @@ function toggleDropdown() {
 }
 
 // Function to handle mouse leave on the dropdown menu
-function handleDropdownMouseLeave() {
-  if (!isDropdownOpen) {
-    const dropdownMenu = document.getElementById("dropdown-menu");
-    dropdownMenu.classList.add("hidden");
-  }
-}
+// function handleDropdownMouseLeave() {
+//   if (!isDropdownOpen) {
+//     const dropdownMenu = document.getElementById("dropdown-menu");
+//     dropdownMenu.classList.add("hidden");
+//   }
+// }
 
 // Function to handle mouse enter on the dropdown menu
 function handleDropdownMouseEnter() {
