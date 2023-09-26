@@ -23,7 +23,7 @@
         </a>
         <button id="mobile-menu-toggle" aria-label="mobile-menu-button" type="button"
           class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
-          <svg fill="currentColor" aria-labelledby="mobile-menu-button" viewBox="0 0 20 20" class="w-6 h-6">
+          <svg fill="currentColor" aria-labelledby="mobile-menu-toggle" viewBox="0 0 20 20" class="w-6 h-6">
             <path id="menu-icon" fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
@@ -40,7 +40,7 @@
           <button id="dropdown-toggle" aria-label="product-dropdown-button" type="button"
             class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline">
             <span class="nav-span">Product</span>
-            <svg id="dropdown-icon" aria-labelledby="icon-dropdown" fill="currentColor" viewBox="0 0 20 20"
+            <svg id="dropdown-icon" fill="currentColor" viewBox="0 0 20 20"
               class="inline w-4 h-4 transition-transform duration-200 transform">
               <path fill-rule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -51,14 +51,14 @@
             <div class="px-2 py-2 bg-white rounded-md shadow">
               <a id="general-insurance"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="#">General Insurance
-                <svg fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20" class="inline w-4 h-4">
+                href="/general-insurance.html">General Insurance
+                <!-- <svg fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20" class="inline w-4 h-4">
                   <path fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
-                </svg>
+                </svg> -->
               </a>
-              <div id="general-insurance-submenu" class="hidden ml-3">
+              <!-- <div id="general-insurance-submenu" class="hidden ml-3">
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="/pages/general-insurance/engineering.html">Engineering</a>
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
@@ -71,10 +71,10 @@
                   href="/pages/general-insurance/liability.html">Liability</a>
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="/pages/general-insurance/all-marine.html">All Marine</a>
-              </div>
+              </div> -->
               <a id="contractor"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="/contractor.html">Contractor
+                href="/contractor.html">Contractor Insurance
               </a>
             </div>
           </div>
@@ -90,7 +90,7 @@
   </header>
   <main>
     <section>
-      <div class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
+      <div class="container mx-auto px-4 py-6 md:px-8 md:py-10 lg:px-12 xl:px-24 lg:py-12">
         <div class="flex flex-col gap-12">
           <div class="flex flex-col items-center gap-4 md:gap-6">
             <h2 class="business-lines-header text-xl sm:text-2xl lg:text-3xl">Contractor</h2>
@@ -218,8 +218,8 @@
       </div>
     </section>
     <section class="background-pdf mb-12">
-      <div class="container mx-auto px-12">
-        <div class="flex flex-col justify-between gap-6 md:flex-row p-12 lg:p-20">
+      <div class="container mx-auto">
+        <div class="flex flex-row justify-between items-center gap-6 md:flex-row p-6 md:p-12 lg:p-14">
           <div class="inline-flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="icon-pdf" width="72" height="72"
               viewBox="0 0 72 72" fill="none">
@@ -228,11 +228,11 @@
                 fill="white" />
             </svg>
             <div class="flex flex-col gap-1 ml-3">
-              <h3 class="pdf-header text-white text-xl lg:text-3xl">Download Company Profile</h3>
-              <p class="text-white text-base lg:text-lg">Type : PDF</p>
+              <h3 class="pdf-header text-white text-md md:text-xl lg:text-3xl">Download Company Profile</h3>
+              <p class="text-white text-sm md:text-base lg:text-lg">Type : PDF</p>
             </div>
           </div>
-          <div class="h-full"> <a href="/pdf/General.pdf" download
+          <div class="h-full"> <a href="/pdf/Contractor.pdf" download
               class="pdf-button flex flex-row justify-center items-center py-2 px-4 lg:py-5 lg:px-10 text-white bg-button-banner rounded-md">
               Download
             </a></div>

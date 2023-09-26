@@ -3,16 +3,16 @@ const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
 const dropdown = document.getElementById("dropdown");
 const dropdownMenu = document.getElementById("dropdown-menu");
 const generalInsurance = document.getElementById("general-insurance");
-const generalInsuranceSubmenu = document.getElementById(
-  "general-insurance-submenu"
-);
+// const generalInsuranceSubmenu = document.getElementById(
+//   "general-insurance-submenu"
+// );
 
 mobileMenuToggle.addEventListener("click", toggleMobileMenu);
 dropdown.addEventListener("click", toggleDropdown);
 // dropdown.addEventListener("mouseleave", handleDropdownMouseLeave);
 dropdownMenu.addEventListener("mouseenter", handleDropdownMouseEnter);
 // dropdownMenu.addEventListener("mouseleave", handleDropdownMouseLeave);
-generalInsurance.addEventListener("click", toggleGeneralInsuranceSubmenu);
+// generalInsurance.addEventListener("click", toggleGeneralInsuranceSubmenu);
 
 // Function to toggle the mobile menu
 function toggleMobileMenu() {
@@ -45,14 +45,14 @@ function handleDropdownMouseEnter() {
 }
 
 // Function to toggle the general insurance submenu
-function toggleGeneralInsuranceSubmenu(event) {
-  event.stopPropagation(); // Prevent the click event from bubbling up
-  const generalInsuranceSubmenu = document.getElementById(
-    "general-insurance-submenu"
-  );
-  generalInsuranceSubmenu.classList.toggle("hidden");
-  isDropdownOpen = !isDropdownOpen;
-}
+// function toggleGeneralInsuranceSubmenu(event) {
+//   event.stopPropagation(); // Prevent the click event from bubbling up
+//   const generalInsuranceSubmenu = document.getElementById(
+//     "general-insurance-submenu"
+//   );
+//   generalInsuranceSubmenu.classList.toggle("hidden");
+//   isDropdownOpen = !isDropdownOpen;
+// }
 
 // Function to truncate text
 function truncateText(selector, maxLength) {

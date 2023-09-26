@@ -21,8 +21,9 @@
         <a href="/index.html" class="focus:outline-none">
           <img src="/images/icon/logo.webp" alt="logo-perusahaan" class="w-20 h-20" />
         </a>
-        <button id="dropdown-toggle" aria-label="product-dropdown-button" type="button">
-          <svg fill="currentColor" aria-labelledby="mobile-menu-button" viewBox="0 0 20 20" class="w-6 h-6">
+        <button id="mobile-menu-toggle" aria-label="mobile-menu-button" type="button"
+          class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
+          <svg fill="currentColor" aria-labelledby="mobile-menu-toggle" viewBox="0 0 20 20" class="w-6 h-6">
             <path id="menu-icon" fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
@@ -39,7 +40,7 @@
           <button id="dropdown-toggle" aria-label="product-dropdown-button" type="button"
             class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline">
             <span class="nav-span">Product</span>
-            <svg id="dropdown-icon" aria-labelledby="icon-dropdown" fill="currentColor" viewBox="0 0 20 20"
+            <svg id="dropdown-icon" fill="currentColor" viewBox="0 0 20 20"
               class="inline w-4 h-4 transition-transform duration-200 transform">
               <path fill-rule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -50,46 +51,31 @@
             <div class="px-2 py-2 bg-white rounded-md shadow">
               <a id="general-insurance"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="#">General Insurance
-                <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
-                  <path fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
+                href="/general-insurance.html">General Insurance
+                <!-- <svg fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20" class="inline w-4 h-4">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg> -->
               </a>
-              <div id="general-insurance-submenu" class="hidden ml-3">
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/surety-bond.html">Surety Bond</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/property.html">Property All Risk</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/motor-vehicle.html">Motor Vehicle</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/liability.html">Liability</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/all-marine.html">All Marine</a>
-              </div>
+              <!-- <div id="general-insurance-submenu" class="hidden ml-3">
+                  <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                    href="/pages/general-insurance/engineering.html">Engineering</a>
+                  <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                    href="/pages/general-insurance/surety-bond.html">Surety Bond</a>
+                  <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                    href="/pages/general-insurance/property.html">Property All Risk</a>
+                  <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                    href="/pages/general-insurance/motor-vehicle.html">Motor Vehicle</a>
+                  <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                    href="/pages/general-insurance/liability.html">Liability</a>
+                  <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                    href="/pages/general-insurance/all-marine.html">All Marine</a>
+                </div> -->
               <a id="contractor"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="#">Contractor
-                <svg fill="currentColor" viewBox="0 0 20 20" class="inline w-4 h-4">
-                  <path fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
+                href="/contractor.html">Contractor Insurance
               </a>
-              <div id="contractor-submenu" class="hidden ml-3">
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="contractor-risk.html">Contractor's All Risk</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="electronic-equipment.html">Electronic Equipment Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="heavy-equipment.html">Heavy Equipment Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="marchinery-breakdown.html">Machinery Breakdown Insurance</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="moveable-all.html">Moveable All Risk Insurance</a>
-              </div>
             </div>
           </div>
         </div>
@@ -104,12 +90,12 @@
   </header>
   <main>
     <section>
-      <div class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
-        <div class="flex flex-col gap-6 md:gap-12">
+      <div class="container mx-auto px-4 py-6 md:px-8 md:py-10 lg:px-12 xl:px-24 lg:py-12">
+        <div class="flex flex-col gap-3 md:gap-6">
           <div class="w-full">
             <img src="/images/marine-protection.webp" class="w-full h-80 object-cover" />
           </div>
-          <div class="flex flex-col gap-4 md:gap-6">
+          <div class="flex flex-col gap-1 md:gap-2">
             <h2 class="location-header text-xl lg:text-2xl">
               Marine Protection & Indemnity
               </h3>

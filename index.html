@@ -51,14 +51,14 @@
             <div class="px-2 py-2 bg-white rounded-md shadow">
               <a id="general-insurance"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="#">General Insurance
-                <svg fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20" class="inline w-4 h-4">
+                href="/general-insurance.html">General Insurance
+                <!-- <svg fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20" class="inline w-4 h-4">
                   <path fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
-                </svg>
+                </svg> -->
               </a>
-              <div id="general-insurance-submenu" class="hidden ml-3">
+              <!-- <div id="general-insurance-submenu" class="hidden ml-3">
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="/pages/general-insurance/engineering.html">Engineering</a>
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
@@ -71,10 +71,10 @@
                   href="/pages/general-insurance/liability.html">Liability</a>
                 <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                   href="/pages/general-insurance/all-marine.html">All Marine</a>
-              </div>
+              </div> -->
               <a id="contractor"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="/contractor.html">Contractor
+                href="/contractor.html">Contractor Insurance
               </a>
             </div>
           </div>
@@ -92,12 +92,12 @@
     <section>
       <div class="container mx-auto px-4 py-6 md:px-8 md:py-10 lg:px-12 xl:px-24 lg:py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex flex-col items-start gap-6 lg:py-5 lg:gap-14">
-            <div class="flex flex-col gap-6 lg:gap-12">
+          <div class="flex flex-col items-start gap-6 lg:gap-14">
+            <div class="flex flex-col gap-4 lg:gap-8">
               <h1 class="hero-heading text-2xl lg:text-3xl">WELCOME TO<br><span>PT Mitra Sona
                   Persada</span>
               </h1>
-              <p class="hero-text text-sm lg:text-base max-w-xl">PT. Mitra Sona Persada has been established
+              <p class="hero-text text-sm lg:text-base max-w-md">PT. Mitra Sona Persada has been established
                 since 2015,
                 specializing in
                 insurance
@@ -114,7 +114,11 @@
             </div>
           </div>
           <div class="container-image-hero">
-            <img class="rounded-md object-cover" src="/images/hero-image.webp" alt="Company Hero Image" />
+            <img class="rounded-md object-none md:object-cover object-center h-full w-full" srcset="/images/hero-mobile.png 640w, 
+                            /images/hero-tablet.png 1024w, 
+                            /images/hero-desktop.jpg 1920w" sizes="(max-width: 639px) 100vw, 
+                           (max-width: 1023px) 100vw, 
+                           50vw" alt="Company Hero Image" />
           </div>
         </div>
       </div>
@@ -122,10 +126,10 @@
     <section>
       <div class="container mx-auto px-4 py-6 md:px-8 md:py-10 lg:px-12 xl:px-24 lg:py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-14">
-          <div class="relative aspect-ratio-16/9">
-            <iframe class="map-iframe absolute inset-0 w-full h-full"
+          <div class="responsive-iframe-wrapper-home relative aspect-ratio-16/9">
+            <iframe class="responsive-iframe-home"
               src="https://maps.google.com/maps?q=Ruko%20Mega%20Cempaka%20Mas%20blok%20M%201%20no.%2033,%20Jakarta%20Pusat%20-%20Indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" scrolling="no" allowfullscreen></iframe>
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
           </div>
           <div class="flex flex-col justify-center md:justify-start gap-10">
             <div class="flex flex col self-center md:self-start">
@@ -174,8 +178,8 @@
             </h2>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2">
-            <div class="bg-container-business-lines-general-insurance text-left px-8 py-8 md:px-12 lg:px-24">
-              <div class="flex flex-col gap-4 md:gap-6">
+            <div class="bg-container-business-lines-general-insurance text-left px-6 py-6 md:px-12 lg:px-24">
+              <div class="flex flex-col gap-4 md:gap-5">
                 <div class="flex flex-col gap-2 h-auto md:h-42 xl:h-32">
                   <h3 class="business-lines-header text-white text-lg lg:text-2xl xl:text-3xl">
                     General Insurance
@@ -194,8 +198,8 @@
                 </div>
               </div>
             </div>
-            <div class="bg-container-business-lines text-left px-8 py-8 md:px-12 lg:px-24">
-              <div class="flex flex-col gap-4 md:gap-6">
+            <div class="bg-container-business-lines text-left px-6 py-6 md:px-12 lg:px-24">
+              <div class="flex flex-col gap-4 md:gap-5">
                 <div class="flex flex-col gap-2 h-auto md:h-42 xl:h-32">
                   <h3 class="business-lines-header text-white text-lg lg:text-2xl xl:text-3xl">
                     Contractor Insurance
@@ -383,7 +387,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
