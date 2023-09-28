@@ -98,10 +98,10 @@ nav>ul>a,
   letter-spacing: -0.48px;
 }
 
-.visi-description {
+/* .visi-description {
   height: 100%;
   width: 100%;
-}
+} */
 
 .container-image-hero {
   flex-grow: 1;
@@ -307,8 +307,8 @@ description {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.32px;
+  line-height: 20px;
+  letter-spacing: -0.28px;
 }
 
 .bg-contract {
@@ -333,6 +333,15 @@ description {
 .liability-container-shadow {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.visi-misi-description {
+  color: #747474;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.32px;
 }
 
 .visi-detail,

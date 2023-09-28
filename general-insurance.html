@@ -19,7 +19,7 @@
   <header class="navbar-shadow">
     <nav class="container mx-auto px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
-        <a href="/index.html" class="focus:outline-none">
+        <a href="/index.html" class="focus:outline-none" tabindex="0">
           <img src="/images/icon/logo.webp" alt="logo-perusahaan" class="w-20 h-20" />
         </a>
         <button id="mobile-menu-toggle" aria-label="mobile-menu-button" type="button"
@@ -53,26 +53,7 @@
               <a id="general-insurance"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                 href="/general-insurance.html">General Insurance
-                <!-- <svg fill="currentColor" aria-labelledby="icon-dropdown" viewBox="0 0 20 20" class="inline w-4 h-4">
-                  <path fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg> -->
               </a>
-              <!-- <div id="general-insurance-submenu" class="hidden ml-3">
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/general-insurance/engineering.html">Engineering</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/general-insurance/surety-bond.html">Surety Bond</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/general-insurance/property.html">Property All Risk</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/general-insurance/motor-vehicle.html">Motor Vehicle</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/general-insurance/liability.html">Liability</a>
-                <a class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                  href="/pages/general-insurance/all-marine.html">All Marine</a>
-              </div> -->
               <a id="contractor"
                 class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
                 href="/contractor.html">Contractor Insurance
@@ -95,7 +76,7 @@
         <div class="flex flex-start justify-center mb-12">
           <h2 class="business-lines-header text-center text-xl md:text-2xl lg:text-3xl">General Insurance</h2>
         </div>
-        <div class="px-6 py-6 lg:px-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div class="flex flex-col flex-start gap-3 md:gap-6">
             <div><img class="object-cover h-36 lg:h-56 rounded-md w-full" src="images/engineering.webp"
                 alt="Property All-Risk Insurance" loading="lazy">
@@ -203,8 +184,8 @@
       </div>
     </section>
     <section class="background-pdf mb-12">
-      <div class="container mx-auto">
-        <div class="flex flex-row justify-between items-center gap-6 md:flex-row p-6 md:p-12 lg:p-14">
+      <div class="container mx-auto px-4 py-6 md:px-8 md:py-10 lg:px-12 xl:px-24 lg:py-12">
+        <div class="flex flex-row justify-between items-center gap-6 md:flex-row">
           <div class="inline-flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="icon-pdf" width="72" height="72"
               viewBox="0 0 72 72" fill="none">
@@ -213,7 +194,7 @@
                 fill="white" />
             </svg>
             <div class="flex flex-col gap-1 ml-3">
-              <h3 class="pdf-header text-white text-md md:text-xl lg:text-3xl">Download Company Profile</h3>
+              <h3 class="pdf-header text-white text-md md:text-xl lg:text-2xl">Download Company Profile</h3>
               <p class="text-white text-sm md:text-base lg:text-lg">Type : PDF</p>
             </div>
           </div>
