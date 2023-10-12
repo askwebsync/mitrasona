@@ -43,6 +43,34 @@ function toggleDropdown() {
 function handleDropdownMouseEnter() {
   isDropdownOpen = true;
 }
+// Function to direct link page section
+document.addEventListener("DOMContentLoaded", function () {
+  // Smooth scroll to anchor links
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+  anchorLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      if (href.startsWith("#")) {
+        e.preventDefault();
+
+        const targetId = href.substring(1); // Remove the "#" symbol
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          // Calculate the offset of the target element
+          const offset = targetElement.getBoundingClientRect().top;
+
+          // Scroll smoothly to the target element with offset
+          window.scrollBy({
+            top: offset,
+            behavior: "smooth",
+          });
+        }
+      }
+    });
+  });
+});
 
 // Function to toggle the general insurance submenu
 // function toggleGeneralInsuranceSubmenu(event) {
