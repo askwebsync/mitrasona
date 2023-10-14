@@ -454,9 +454,9 @@ description {
 
 .slider {
   height: 300px;
-  margin: auto;
+  margin: 0;
   position: relative;
-  width: 90%;
+  width: 100%;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -501,7 +501,7 @@ img:hover {
   content: "";
   height: 100%;
   position: absolute;
-  width: 6%;
+  width: 2%;
   z-index: 2;
 }
 
