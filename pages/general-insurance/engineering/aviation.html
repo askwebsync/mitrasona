@@ -1,179 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/images/icon/logo.webp" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Marchinery Breakdown - PT.Mitra Sona Persada</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" href="/images/icon/logo.webp" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <title>Marchinery Breakdown - PT.Mitra Sona Persada</title>
-</head>
-
-<body>
-  <header class="navbar-shadow">
-    <nav class="container mx-auto px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center">
-      <div class="flex items-center justify-between">
-        <a href="/index.html" class="focus:outline-none" tabindex="0">
-          <img src="/images/icon/logo.webp" alt="logo-perusahaan" class="w-20 h-20" />
-        </a>
-        <button id="mobile-menu-toggle" aria-label="mobile-menu-button" type="button"
-          class="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
-          <svg fill="currentColor" aria-labelledby="mobile-menu-toggle" viewBox="0 0 20 20" class="w-6 h-6">
-            <path id="menu-icon" fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
-            <path id="close-icon" fill-rule="evenodd" class="hidden"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </div>
-      <ul id="menu" class="hidden flex flex-col md:flex md:justify-end md:flex-row">
-        <a class="px-4 py-2 text-sm md:text-base rounded-lg focus:outline-none focus:shadow-outline" href="/index.html"
-          id="home">Home</a>
-        <div id="dropdown" class="relative">
-          <button id="dropdown-toggle" aria-label="product-dropdown-button" type="button"
-            class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline">
-            <span class="nav-span">Product</span>
-            <svg id="dropdown-icon" fill="currentColor" viewBox="0 0 20 20"
-              class="inline w-4 h-4 transition-transform duration-200 transform">
-              <path fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
+  <body>
+    <header class="navbar-shadow">
+      <nav
+        class="px-4 py-2 md:px-8 lg:px-12 xl:px-24 md:flex md:justify-between md:items-center"
+      >
+        <div class="flex items-center justify-between">
+          <a href="/index.html" class="focus:outline-none" tabindex="0">
+            <img
+              src="/images/icon/logo.webp"
+              alt="logo-perusahaan"
+              class="w-20 h-20"
+            />
+          </a>
+          <button
+            id="mobile-menu-toggle"
+            aria-label="mobile-menu-button"
+            type="button"
+            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+          >
+            <svg
+              fill="currentColor"
+              aria-labelledby="mobile-menu-toggle"
+              viewBox="0 0 20 20"
+              class="w-6 h-6"
+            >
+              <path
+                id="menu-icon"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                id="close-icon"
+                fill-rule="evenodd"
+                class="hidden"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
             </svg>
           </button>
-          <div id="dropdown-menu" class="absolute right-0 w-full origin-top-right rounded-md shadow-lg md:w-48 hidden">
-            <div class="px-2 py-2 bg-white rounded-md shadow">
-              <a id="general-insurance"
-                class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="/general-insurance.html">General Insurance
-              </a>
-              <a id="contractor"
-                class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-                href="/contractor.html">Contractor Insurance
-              </a>
-            </div>
-          </div>
         </div>
-        <a class="px-4 py-2 text-sm md:text-base bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-          href="/gallery.html" id="gallery">Gallery</a>
-        <a class="px-4 py-2 text-sm md:text-base bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-          href="/location.html" id="location">Location</a>
-        <a class="px-4 py-2 text-sm md:text-base bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
-          href="/contact.html" id="contact">Contact</a>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <div class="container mx-auto px-4 py-6 md:px-8 md:py-10 lg:px-12 xl:px-24 lg:py-12">
-        <div class="flex flex-col gap-3 md:gap-6">
-          <div class="w-full">
-            <img src="images/aviation-1.webp" class="w-full h-80 object-cover" />
-          </div>
-          <div class="flex flex-col gap-1 md:gap-2">
-            <h2 class="location-header text-xl lg:text-2xl">Aviation Insurance</h2>
-            <p class="general-product-card-description text-sm md:text-base">
-              Aviation Insurance provides compensation for risks of loss or damage to aircraft frames and engines and /
-              or other equipment and also guarantees legal liability to third parties.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer-background">
-    <div class="container mx-auto pt-16 pb-6 px-6 center">
-      <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
-        <div>
-          <nav>
-            <ul class="space-y-4 text-sm">
-              <li>
-                <div class="max-w-md mb-2">
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo.webp" />
-                </div>
-              </li>
-              <li>
-                <div class="max-w-md my-2">
-                  <p class="text-white text-base mt-2 max-w-custom-xs">
-                    Register and Supervised
-                  </p>
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/OJK_Logo.webp" />
-                  <img class="w-24 h-24 object-contain object-center" src="/images/icon/logo-mari-berasuransi.webp" />
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class=" ">
-          <p class="text-yellow footer-yellow-header">Contact Info</p>
-
-          <div class="flex flex-col gap-6 mt-8">
-            <div class="items-center">
-              <p class="text-white max-w-xs">
-                Ruko Mega Grosir Cempaka Mas Blok M1 no.33 Jakarta Pusat -
-                Indonesia
-              </p>
-            </div>
-            <div class="items-center">
-              <p class="ml:0 md:ml-2 text-white transition group-hover:text-white/75">
-                <a href="tel:6281298444393">+6281298444393</a>
-              </p>
-            </div>
-            <div class="items-center">
-              <p class="ml:0 md:ml-2 text-white max-w-xs transition group-hover:text-white/75">
-                Mspmitra@gmail.com
-              </p>
-            </div>
-            <div class="items-center">
-              <p class="text-white transition group-hover:text-white/75">
-                Monday - Friday :
-              </p>
-              <p class="text-white transition group-hover:text-white/75">
-                08:00 - 17:00
-              </p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <p class="text-yellow footer-yellow-header">Quicklinks</p>
-          <nav class="mt-8">
-            <ul class="space-y-5 footer-white-detail">
-              <li>
-                <a class="text-white transition group-hover:text-white/75" href="/index.html">Home
+        <ul
+          id="menu"
+          class="hidden flex flex-col md:flex md:justify-end md:flex-row"
+        >
+          <a
+            class="px-4 py-2 text-sm md:text-base rounded-lg focus:outline-none focus:shadow-outline"
+            href="/index.html"
+            id="home"
+            >Home</a
+          >
+          <div id="dropdown" class="relative">
+            <button
+              id="dropdown-toggle"
+              aria-label="product-dropdown-button"
+              type="button"
+              class="flex flex-row items-center w-full px-4 py-2 text-sm md:text-base text-left bg-transparent rounded-lg md:w-auto md:inline focus:outline-none focus:shadow-outline"
+            >
+              <span class="nav-span">Product</span>
+              <svg
+                id="dropdown-icon"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                class="inline w-4 h-4 transition-transform duration-200 transform"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="dropdown-menu"
+              class="absolute right-0 w-full origin-top-right rounded-md shadow-lg md:w-48 hidden"
+            >
+              <div class="px-2 py-2 bg-white rounded-md shadow">
+                <a
+                  id="general-insurance"
+                  class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                  href="/general-insurance.html"
+                  >General Insurance
                 </a>
-              </li>
-              <li class="dropdown-footer">
-                <a class="flex flex-row items-center dropbtn-footer cursor-pointer text-white">
+                <a
+                  id="contractor"
+                  class="block px-4 py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+                  href="/contractor.html"
+                  >Contractor Insurance
+                </a>
+              </div>
+            </div>
+          </div>
+          <a
+            class="px-4 py-2 text-sm md:text-base bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+            href="/gallery.html"
+            id="gallery"
+            >Gallery</a
+          >
+          <a
+            class="px-4 py-2 text-sm md:text-base bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+            href="/location.html"
+            id="location"
+            >Location</a
+          >
+          <a
+            class="px-4 py-2 text-sm md:text-base bg-transparent rounded-lg focus:outline-none focus:shadow-outline"
+            href="/contact.html"
+            id="contact"
+            >Contact</a
+          >
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="px-4 py-6 md:px-8 md:py-10 lg:px-12 xl:px-24 lg:py-12">
+          <div class="flex flex-col gap-3 md:gap-6">
+            <div class="w-full">
+              <img
+                src="images/aviation-1.webp"
+                class="w-full h-80 object-cover"
+              />
+            </div>
+            <div class="flex flex-col gap-1 md:gap-2">
+              <h2 class="location-header text-xl lg:text-2xl">
+                Aviation Insurance
+              </h2>
+              <p class="general-product-card-description text-sm md:text-base">
+                Aviation Insurance provides compensation for risks of loss or
+                damage to aircraft frames and engines and / or other equipment
+                and also guarantees legal liability to third parties.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-background">
+      <div class="px-4 py-8 lg:py-16 md:px-8 lg:px-12 xl:px-24">
+        <div class="flex flex-col md:flex-row gap-7 md:gap-14 lg:gap-28">
+          <div class="w-full md:w-1/5 flex flex-col gap-3 xl:gap-9">
+            <div
+              class="flex flex-col items-center gap-1 md:gap-2 lg:gap-4 xl:gap-6"
+            >
+              <img
+                class="w-24 h-24 object-contain object-center"
+                src="/images/icon/logo.webp"
+                alt="logo-perusahaan"
+              />
+              <p
+                class="footer-card-text text-center max-w-custom-xs text-sm lg:text-base"
+              >
+                Register and Supervised
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-24 h-24 object-contain object-center"
+                src="/images/icon/OJK_Logo.webp"
+                alt="logo-ojk"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full md:w-4/5 ml-0 md:ml-10 lg:ml-0 flex flex-col gap-y-12 lg:gap-y-14 lg:my-6"
+          >
+            <div
+              class="grid grid-cols-1 text-center md:text-left gap-5 lg:gap-10 sm:grid-cols-2 xl:grid-cols-4 xl:gap-14"
+            >
+              <div class="flex flex-col gap-2">
+                <h2 class="text-yellow footer-yellow-header text-lg lg:text-xl">
                   Product
-                </a>
-                <div class="dropdown-content-footer">
-                  <a class="text-white transition group-hover:text-white/75" href="/general-insurance.html">General
-                    Insurance</a>
-                  <a class="text-white transition group-hover:text-white/75" href="/contractor.html">Contractor</a>
+                </h2>
+                <div class="flex flex-col gap-1 lg:gap-3">
+                  <a
+                    class="footer-card-text text-sm lg:text-base"
+                    href="/general-insurance.html"
+                    >General Insurance</a
+                  >
+                  <a
+                    class="footer-card-text text-sm lg:text-base"
+                    href="/contractor.html"
+                    >Contractor Insurance</a
+                  >
                 </div>
-              </li>
-              <li>
-                <a class="text-white transition group-hover:text-white/75" href="/gallery.html">Gallery</a>
-              </li>
-              <li>
-                <a class="text-white transition group-hover:text-white/75" href="/location.html">Location</a>
-              </li>
-              <li>
-                <a class="text-white transition group-hover:text-white/75" href="/contact.html">Contact</a>
-              </li>
-            </ul>
-          </nav>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h2 class="text-yellow footer-yellow-header text-lg lg:text-xl">
+                  Gallery
+                </h2>
+                <div class="flex flex-col gap-1 lg:gap-3">
+                  <a
+                    class="footer-card-text text-sm lg:text-base"
+                    href="/gallery.html#program-overview"
+                    >Program Overview</a
+                  >
+                  <a
+                    class="footer-card-text text-sm lg:text-base"
+                    href="/gallery.html#our-partners"
+                    >Our Partners</a
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h2 class="text-yellow footer-yellow-header text-lg lg:text-xl">
+                  Location
+                </h2>
+                <div class="flex flex-col gap-1 lg:gap-3">
+                  <a
+                    class="footer-card-text text-sm lg:text-base"
+                    href="/location.html"
+                    >Our Office</a
+                  >
+                  <a
+                    class="footer-card-text text-sm lg:text-base"
+                    href="/location.html"
+                    >Working Hours</a
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h2 class="text-yellow footer-yellow-header text-lg lg:text-xl">
+                  Contact
+                </h2>
+                <div class="flex flex-col gap-1 lg:gap-3">
+                  <a
+                    href="tel:6281298444393"
+                    class="underline underline-offset-8 footer-card-text text-sm lg:text-base"
+                    >+6281298444393</a
+                  >
+                  <a
+                    href="mailto:Mspmitra@gmail.com"
+                    class="footer-card-text text-sm lg:text-base"
+                  >
+                    Mspmitra@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 text-center md:text-left">
+              <h2 class="text-yellow footer-yellow-header text-lg lg:text-xl">
+                Address
+              </h2>
+              <div class="">
+                <p class="footer-card-tiga-text text-sm lg:text-base">
+                  Ruko Mega Grosir Cempaka Mas Blok M1 no.33 Jakarta Pusat -
+                  Indonesia
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="/js/script.js"></script>
-</body>
-
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
