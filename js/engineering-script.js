@@ -11,4 +11,4 @@ function truncateText(selector, maxLength) {
 }
 
 // Call the function for the specific elements you want to truncate
-truncateText(".engineering-page-card-description", 100); // Adjust 100 to your desired maximum length
+truncateText(".engineering-page-card-description", 80); // Adjust 100 to your desired maximum length
