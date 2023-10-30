@@ -88,6 +88,16 @@ nav>ul>a,
   }
 }
 
+.visi-misi-header,
+.business-lines-header,
+.company-partner-header {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.65px;
+}
+
 .visi-subheader,
 .misi-subheader {
   color: #000;
@@ -98,38 +108,24 @@ nav>ul>a,
   letter-spacing: -0.48px;
 }
 
-/* .visi-description {
-  height: 100%;
-  width: 100%;
-} */
-
-.container-image-hero {
-  flex-grow: 1;
-  /* Allow the image container to expand vertically to match its content */
-  display: flex;
-  align-items: center;
-  /* Vertically center the image */
-  overflow: hidden;
-  /* Add this line to hide any overflow */
+.visi-detail,
+.misi-detail,
+.hero-banner-text,
+.footer-menu,
+.contractor-text {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  color: #717171;
 }
 
-.container-image-hero img {
-  max-height: 100%;
-  /* Set the maximum height of the image to 100% of the container's height */
-  width: 100%;
-  /* Match the width of the image to the container's width */
-}
-
-.gallery-img {
-  object-fit: contain;
-  box-shadow: none;
-  background: none;
-  max-height: 80px;
-}
-
-.gallery-container-img {
-  width: 170px;
-  height: 80px;
+.visi-misi-description {
+  color: #747474;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.64px;
 }
 
 .bg-button-banner {
@@ -143,6 +139,41 @@ nav>ul>a,
 .icon-container {
   width: 40px;
   height: 40px;
+}
+
+.svg-size {
+  width: 41px;
+  height: 40px;
+}
+
+
+.max-w-custom-xs {
+  max-width: 10rem;
+}
+
+.container-image-hero {
+  flex-grow: 1;
+  /* Allow the image container to expand vertically to match its content */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container-image-hero img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.gallery-img {
+  object-fit: contain;
+  box-shadow: none;
+  background: none;
+  max-height: 80px;
+}
+
+.gallery-container-img {
+  width: 170px;
+  height: 80px;
 }
 
 .responsive-iframe-wrapper {
@@ -176,37 +207,6 @@ nav>ul>a,
   height: 100%;
 }
 
-.visi-misi-header,
-.company-partner-header {
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: -0.65px;
-}
-
-.business-lines-header {
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: -1px;
-}
-
-.business-lines-description {
-  color: #FFF;
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: -0.32px;
-}
-
-.svg-size {
-  width: 41px;
-  height: 40px;
-}
-
 .product-card-header {
   font-family: "Work Sans";
   font-style: normal;
@@ -230,11 +230,57 @@ nav>ul>a,
   color: #EB8A0B;
 }
 
+.bg-container-business-lines-general-insurance {
+  border-right: 1px solid #FFF;
+  background: linear-gradient(92deg, #1278BE -7.61%, rgba(18, 120, 190, 0.00) 222.72%);
+}
+
+.bg-container-business-lines {
+  background: linear-gradient(92deg, #1278BE -7.61%, rgba(18, 120, 190, 0.00) 222.72%);
+}
+
+@media screen and (max-width: 767px) {
+  .bg-container-business-lines-general-insurance {
+    border-bottom: 1px solid #FFF;
+    background: linear-gradient(92deg, #1278BE -7.61%, rgba(18, 120, 190, 0.00) 222.72%);
+  }
+}
+
 .business-lines-button-text {
   color: #FFF;
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
+}
+
+.business-lines-description {
+  color: #FFF;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.64px;
+}
+
+.contact-page-subheader {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.64px;
+}
+
+.contact-page-button-text {
+  color: #FFF;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.64px;
+}
+
+.contact-page-input-border {
+  border: 1px solid #f79a1f;
 }
 
 description {
@@ -244,7 +290,7 @@ description {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.64px;
 }
 
 .pdf-header {
@@ -267,24 +313,6 @@ description {
   font-weight: 400;
 }
 
-.footer-yellow-header {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 600;
-}
-
-.footer-white-detail {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 600;
-}
-
-.contract-table-header {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 500;
-}
-
 .liability-card-header {
   font-family: "Work Sans";
   font-style: normal;
@@ -293,22 +321,25 @@ description {
   letter-spacing: -0.64px;
 }
 
-.footer-card-text {
-  color: #FFF;
-  font-family: Work Sans;
+.liability-container-shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.card-product-header {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.64px;
+}
+
+.card-detail {
+  font-family: "Work Sans";
+  font-style: normal;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.32px;
+  line-height: 21px;
+  letter-spacing: -0.64px;
 }
-
-.footer-card-tiga-text {
-  color: #FFF;
-  font-family: Work Sans;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: -0.32px;
-}
-
 
 .location-header {
   color: #000;
@@ -333,60 +364,36 @@ description {
   box-shadow: inset 0px 4px 4px #ffca84;
 }
 
+.contract-table-header {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+}
+
 .contract-table-detail {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
 }
 
-.liability-card-detail {
+.text-yellow {
+  color: #f79a1f;
+}
+
+.icon-yellow {
+  color: #f79a1f;
+  font-size: 35px;
+}
+
+.engineering-page-card-description {
+  color: #212121;
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  line-height: 21px;
-  letter-spacing: -0.32px;
+  line-height: 18px;
+  letter-spacing: -0.64px;
 }
 
-.liability-container-shadow {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.visi-misi-description {
-  color: #747474;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: -0.32px;
-}
-
-.visi-detail,
-.misi-detail,
-.hero-banner-text,
-.footer-menu,
-.contractor-text {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  color: #717171;
-}
-
-.bg-container-business-lines-general-insurance {
-  border-right: 1px solid #FFF;
-  background: linear-gradient(92deg, #1278BE -7.61%, rgba(18, 120, 190, 0.00) 222.72%);
-}
-
-.bg-container-business-lines {
-  background: linear-gradient(92deg, #1278BE -7.61%, rgba(18, 120, 190, 0.00) 222.72%);
-}
-
-@media screen and (max-width: 767px) {
-  .bg-container-business-lines-general-insurance {
-    border-bottom: 1px solid #FFF;
-    background: linear-gradient(92deg, #1278BE -7.61%, rgba(18, 120, 190, 0.00) 222.72%);
-  }
-}
 
 .text {
   color: #f2f2f2;
@@ -435,13 +442,24 @@ description {
   }
 }
 
-.text-yellow {
-  color: #f79a1f;
+.footer-yellow-header {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
 }
 
-.icon-yellow {
-  color: #f79a1f;
-  font-size: 35px;
+.footer-white-detail {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+}
+
+.footer-card-text {
+  color: #FFF;
+  font-family: Work Sans;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.64px;
 }
 
 .footer-background {
@@ -453,7 +471,7 @@ description {
 }
 
 .slider {
-  height: 300px;
+  height: 280px;
   margin: 0;
   position: relative;
   width: 100%;
@@ -517,64 +535,26 @@ img:hover {
 }
 
 /* .float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 40px;
-  text-align: center;
-  font-size: 34px;
+     position: fixed;
+     width: 60px;
+     height: 60px;
+     bottom: 25px;
+     right: 25px;
+     background-color: #25d366;
+     color: #fff;
+     border-radius: 40px;
+     text-align: center;
+     font-size: 34px;
 }
-
-.my-float {
-  margin: 14px;
-} */
-
-.contact-page-subheader {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.32px;
+ .my-float {
+     margin: 14px;
 }
-
-.contact-page-button-text {
-  color: #FFF;
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: -0.32px;
-}
-
-.contact-page-input-border {
-  border: 1px solid #f79a1f;
-}
-
-.engineering-page-card-description {
-  color: #212121;
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: -0.32px;
-}
-
-.max-w-custom-xs {
-  max-width: 10rem;
-}
-
+ */
 .background-pdf {
-  background: linear-gradient(88.64deg,
-      #1278be 2.31%,
-      rgba(18, 120, 190, 0) 182.68%);
+  background: linear-gradient(88.64deg, #1278be 2.31%, rgba(18, 120, 190, 0) 182.68%);
 }
 
 /* Dropdown Section */
-
 .dropbtn-footer {
   color: white;
   border: none;
@@ -610,16 +590,7 @@ img:hover {
   display: block;
 }
 
-.general-product-card-description {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.32px;
-}
-
 /* On smaller screens, decrease text size */
-
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px;
